@@ -1,0 +1,1121 @@
+
+        BEAST v1.10.5 Prerelease #23570d1, 2002-2019
+       Bayesian Evolutionary Analysis Sampling Trees
+                 Designed and developed by
+   Alexei J. Drummond, Andrew Rambaut and Marc A. Suchard
+                              
+               Department of Computer Science
+                   University of Auckland
+                  alexei@cs.auckland.ac.nz
+                              
+             Institute of Evolutionary Biology
+                  University of Edinburgh
+                     a.rambaut@ed.ac.uk
+                              
+              David Geffen School of Medicine
+           University of California, Los Angeles
+                     msuchard@ucla.edu
+                              
+                Downloads, Help & Resources:
+                  	http://beast.community
+                              
+Source code distributed under the GNU Lesser General Public License:
+          	http://github.com/beast-dev/beast-mcmc
+                              
+                     BEAST developers:
+	Alex Alekseyenko, Guy Baele, Trevor Bedford, Filip Bielejec, Erik Bloomquist, Matthew Hall,
+	Joseph Heled, Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li,
+	Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel,
+          	Oliver Pybus, Chieh-Hsi Wu, Walter Xie
+                              
+                         Thanks to:
+    	Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Using BEAGLE library v4.0.0 (PRE-RELEASE) for accelerated, parallel likelihood evaluation
+2009-, BEAGLE Working Group - https://beagle-dev.github.io/
+Citation: Ayres et al (2019) Systematic Biology 68: 1052-1061 | doi:10.1093/sysbio/syz020
+
+
+Random number seed: 1732713705419
+
+
+Loading additional development parsers from development_parsers.properties, which is additional set of parsers only available for development version ...
+
+Parsing XML file: sim11_biased_2.5_500_tipSwap.xml
+  File encoding: UTF8
+Looking for plugins in /Users/spellulb/Fabiana/BFadj/simulation11/dta_tipSwap/plugins
+
+Read alignment: alignment
+  Sequences = 500
+      Sites = 4
+   Datatype = nucleotide
+Site patterns 'patterns' created from positions 1-4 of alignment 'alignment'
+  unique pattern count = 1
+Read attribute patterns, 'regions.pattern' for attribute, regions
+Creating the empirical tree distribution model, 'treeModel'
+    Randomly jump between 100 trees from file, sim11_biased_2.5_500_select100.trees
+
+Using strict molecular clock model.
+
+Creating state frequencies model 'regions.frequencies': Initial frequencies = {0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.16667}
+  General Substitution Model (stateCount=6)
+  Using BSSVS Complex Substitution Model
+
+Creating site rate model.
+
+Creating state frequencies model 'regions.root.frequencies': Initial frequencies = {0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.16667}
+
+Using BEAGLE TreeLikelihood
+  Branch rate model used: strictClockBranchRates
+  Using BEAGLE resource 0: CPU (arm64)
+    with instance flags:  PRECISION_DOUBLE COMPUTATION_SYNCH EIGEN_COMPLEX SCALING_MANUAL SCALERS_RAW VECTOR_NONE THREADING_CPP PROCESSOR_CPU FRAMEWORK_CPU PREORDER_TRANSPOSE_MANUAL
+  Ignoring ambiguities in tree likelihood.
+  With 1 unique site patterns.
+  Using rescaling scheme : delayed (delay rescaling until first overflow)
+Optimization Schedule: log
+Creating CTMC Scale Reference Prior model.
+Acting on subtree of size 500
+Constructing a cache around likelihood 'null', signal = regions.rates
+
+Likelihood computation is using an auto sizing thread pool.
+
+Creating the MCMC chain:
+  chain length = 40000000
+  operator adaption = true
+  adaptation delayed for 400000 steps
+
+Citations for this analysis: 
+
+FRAMEWORK
+BEAST primary citation:
+	Suchard MA, Lemey P, Baele G, Ayres DL, Drummond AJ, Rambaut A (2018) Bayesian phylogenetic and phylodynamic data integration using BEAST 1.10. Virus Evolution. vey016. DOI:10.1093/ve/vey016
+Using BEAGLE likelihood calculation library:
+	Ayres et al  (2012) BEAGLE: a common application programming inferface and high-performance computing library for statistical phylogenetics. Syst Biol. 61, 170-173. DOI:10.1093/sysbio/syr100
+
+SUBSTITUTION MODELS
+Complex-diagonalizable, irreversible substitution model:
+	Edwards CJ, Suchard MA, Lemey P, Welch JJ, Barnes I, Fulton TL, Barnett R, O'Connell TC, Coxon P, Monaghan N, Valdiosera CE, Lorenzen ED, Willerslev E, Baryshnikov GF, Rambaut A, Thomas MG, Bradley DG, Shapiro B (2011) Ancient hybridization and an Irish origin for the modern polar bear matriline. Current Biology. 21, 1251-1258
+
+PRIOR MODELS
+CTMC Scale Reference Prior model:
+	Ferreira MAR, Suchard MA (2008) Bayesian analysis of elapsed times in continuous-time Markov chains. Canadian Journal of Statistics. 36, 355-368
+
+
+# BEAST v1.10.5 Prerelease #23570d1
+# Generated Wed Nov 27 14:21:49 CET 2024 [seed=1732713705419]
+# sim11_biased_2.5_500_tipSwap.xml
+state	Joint       	Prior       	Likelihood  
+0	-934.7473   	-494.7848   	-439.9625   	-
+Underflow calculating likelihood. Attempting a rescaling...
+40000	-1046.5490  	-160.2985   	-886.2505   	2.83 minutes/million states
+80000	-1056.0701  	-125.5911   	-930.4791   	2.6 minutes/million states
+120000	-1093.5385  	-134.3861   	-959.1524   	2.6 minutes/million states
+160000	-1073.6429  	-117.7542   	-955.8887   	2.56 minutes/million states
+200000	-1051.8355  	-106.5645   	-945.2710   	2.57 minutes/million states
+240000	-1112.1916  	-151.9046   	-960.2870   	2.57 minutes/million states
+280000	-1059.5728  	-127.0724   	-932.5004   	2.56 minutes/million states
+320000	-1103.3079  	-117.2690   	-986.0389   	2.55 minutes/million states
+360000	-1078.5735  	-132.1540   	-946.4195   	2.56 minutes/million states
+400000	-1089.0604  	-144.9997   	-944.0607   	2.58 minutes/million states
+440000	-1070.9416  	-143.6007   	-927.3409   	2.57 minutes/million states
+480000	-1099.9508  	-129.5920   	-970.3588   	2.59 minutes/million states
+520000	-1084.7013  	-136.8136   	-947.8877   	2.59 minutes/million states
+560000	-1060.0287  	-128.7040   	-931.3247   	2.59 minutes/million states
+600000	-1098.7731  	-159.4708   	-939.3023   	2.59 minutes/million states
+640000	-1081.9866  	-131.8052   	-950.1815   	2.59 minutes/million states
+680000	-1103.2748  	-144.7071   	-958.5678   	2.6 minutes/million states
+720000	-1070.0383  	-140.3480   	-929.6903   	2.6 minutes/million states
+760000	-1051.3269  	-108.1833   	-943.1436   	2.6 minutes/million states
+800000	-1161.7578  	-164.4510   	-997.3068   	2.61 minutes/million states
+840000	-1108.0719  	-129.6861   	-978.3858   	2.62 minutes/million states
+880000	-1078.6320  	-136.5171   	-942.1149   	2.63 minutes/million states
+920000	-1069.2571  	-139.9588   	-929.2982   	2.62 minutes/million states
+960000	-1079.7968  	-134.7717   	-945.0251   	2.63 minutes/million states
+1000000	-1111.5734  	-158.3834   	-953.1900   	2.62 minutes/million states
+1040000	-1125.7086  	-132.4328   	-993.2758   	2.62 minutes/million states
+1080000	-1058.3438  	-135.4311   	-922.9127   	2.63 minutes/million states
+1120000	-1078.9493  	-129.7929   	-949.1564   	2.62 minutes/million states
+1160000	-1099.0864  	-124.8624   	-974.2241   	2.62 minutes/million states
+1200000	-1094.6913  	-149.3074   	-945.3839   	2.62 minutes/million states
+1240000	-1093.0352  	-119.3039   	-973.7313   	2.63 minutes/million states
+1280000	-1075.6360  	-135.4761   	-940.1599   	2.63 minutes/million states
+1320000	-1106.2066  	-128.7590   	-977.4476   	2.63 minutes/million states
+1360000	-1096.0699  	-124.4128   	-971.6571   	2.64 minutes/million states
+1400000	-1073.6952  	-136.4107   	-937.2845   	2.64 minutes/million states
+1440000	-1057.8739  	-123.4295   	-934.4444   	2.64 minutes/million states
+1480000	-1079.2714  	-134.2943   	-944.9771   	2.64 minutes/million states
+1520000	-1073.7175  	-121.1548   	-952.5627   	2.64 minutes/million states
+1560000	-1129.0272  	-143.8850   	-985.1422   	2.65 minutes/million states
+1600000	-1073.7495  	-113.6603   	-960.0892   	2.65 minutes/million states
+1640000	-1104.3917  	-134.2777   	-970.1140   	2.65 minutes/million states
+1680000	-1099.0112  	-144.0685   	-954.9427   	2.65 minutes/million states
+1720000	-1080.8962  	-139.3029   	-941.5933   	2.65 minutes/million states
+1760000	-1114.9381  	-141.0629   	-973.8753   	2.65 minutes/million states
+1800000	-1054.2374  	-150.8868   	-903.3506   	2.65 minutes/million states
+1840000	-1025.1409  	-119.2011   	-905.9397   	2.66 minutes/million states
+1880000	-1082.6624  	-134.8643   	-947.7981   	2.66 minutes/million states
+1920000	-1062.4003  	-124.4608   	-937.9394   	2.66 minutes/million states
+1960000	-1082.7641  	-136.9885   	-945.7756   	2.66 minutes/million states
+2000000	-1082.8241  	-135.3888   	-947.4352   	2.65 minutes/million states
+2040000	-1045.0247  	-111.7241   	-933.3006   	2.65 minutes/million states
+2080000	-1105.7862  	-176.9618   	-928.8243   	2.65 minutes/million states
+2120000	-1112.2027  	-160.1200   	-952.0828   	2.65 minutes/million states
+2160000	-1091.4615  	-143.6616   	-947.7999   	2.65 minutes/million states
+2200000	-1079.1989  	-130.9036   	-948.2953   	2.66 minutes/million states
+2240000	-1076.1376  	-137.5767   	-938.5608   	2.66 minutes/million states
+2280000	-1059.9704  	-115.6937   	-944.2766   	2.65 minutes/million states
+2320000	-1063.0331  	-146.6538   	-916.3793   	2.66 minutes/million states
+2360000	-1094.2955  	-119.3713   	-974.9242   	2.66 minutes/million states
+2400000	-1080.3004  	-136.5687   	-943.7316   	2.66 minutes/million states
+2440000	-1046.0160  	-114.2380   	-931.7780   	2.66 minutes/million states
+2480000	-1065.5832  	-110.1794   	-955.4038   	2.66 minutes/million states
+2520000	-1097.9370  	-118.8267   	-979.1102   	2.66 minutes/million states
+2560000	-1083.0940  	-119.7429   	-963.3511   	2.66 minutes/million states
+2600000	-1084.2888  	-114.7420   	-969.5467   	2.66 minutes/million states
+2640000	-1117.7976  	-151.2430   	-966.5546   	2.66 minutes/million states
+2680000	-1082.8267  	-139.4969   	-943.3298   	2.66 minutes/million states
+2720000	-1070.6681  	-106.8558   	-963.8123   	2.66 minutes/million states
+2760000	-1098.1843  	-151.1892   	-946.9951   	2.66 minutes/million states
+2800000	-1084.6928  	-123.1011   	-961.5916   	2.66 minutes/million states
+2840000	-1089.8074  	-143.1855   	-946.6218   	2.66 minutes/million states
+2880000	-1057.8699  	-126.3380   	-931.5319   	2.66 minutes/million states
+2920000	-1097.3452  	-141.3774   	-955.9678   	2.66 minutes/million states
+2960000	-1028.4932  	-128.8035   	-899.6897   	2.66 minutes/million states
+3000000	-1096.9920  	-120.0766   	-976.9154   	2.66 minutes/million states
+3040000	-1077.1729  	-129.9501   	-947.2228   	2.65 minutes/million states
+3080000	-1075.4270  	-135.0060   	-940.4210   	2.65 minutes/million states
+3120000	-1051.0119  	-114.2894   	-936.7225   	2.65 minutes/million states
+3160000	-1071.0549  	-126.6938   	-944.3610   	2.65 minutes/million states
+3200000	-1090.8158  	-131.3482   	-959.4676   	2.65 minutes/million states
+3240000	-1082.7406  	-133.5201   	-949.2205   	2.65 minutes/million states
+3280000	-1098.7267  	-132.4864   	-966.2403   	2.65 minutes/million states
+3320000	-1067.2383  	-137.7469   	-929.4914   	2.65 minutes/million states
+3360000	-1089.8541  	-133.5272   	-956.3269   	2.65 minutes/million states
+3400000	-1063.0540  	-117.2298   	-945.8243   	2.65 minutes/million states
+3440000	-1091.6159  	-126.0261   	-965.5898   	2.65 minutes/million states
+3480000	-1078.5152  	-138.6745   	-939.8407   	2.66 minutes/million states
+3520000	-1060.6165  	-130.9497   	-929.6668   	2.66 minutes/million states
+3560000	-1067.3330  	-125.2449   	-942.0881   	2.66 minutes/million states
+3600000	-1084.9538  	-121.9771   	-962.9768   	2.66 minutes/million states
+3640000	-1102.1140  	-129.7596   	-972.3544   	2.66 minutes/million states
+3680000	-1087.1951  	-152.5485   	-934.6466   	2.66 minutes/million states
+3720000	-1047.2653  	-117.6978   	-929.5676   	2.66 minutes/million states
+3760000	-1072.6427  	-143.3737   	-929.2690   	2.66 minutes/million states
+3800000	-1094.5896  	-121.1201   	-973.4695   	2.66 minutes/million states
+3840000	-1092.8017  	-152.4650   	-940.3366   	2.66 minutes/million states
+3880000	-1082.1296  	-131.1404   	-950.9892   	2.66 minutes/million states
+3920000	-1077.6003  	-140.4307   	-937.1696   	2.66 minutes/million states
+3960000	-1068.3348  	-143.7250   	-924.6098   	2.66 minutes/million states
+4000000	-1082.3341  	-123.9855   	-958.3486   	2.66 minutes/million states
+4040000	-1092.7113  	-140.1203   	-952.5910   	2.66 minutes/million states
+4080000	-1078.0790  	-151.8473   	-926.2317   	2.66 minutes/million states
+4120000	-1071.1070  	-127.3516   	-943.7554   	2.66 minutes/million states
+4160000	-1126.1130  	-126.8102   	-999.3028   	2.66 minutes/million states
+4200000	-1080.7032  	-132.0405   	-948.6626   	2.66 minutes/million states
+4240000	-1096.4324  	-109.8624   	-986.5700   	2.66 minutes/million states
+4280000	-1086.4863  	-131.9310   	-954.5553   	2.66 minutes/million states
+4320000	-1073.6620  	-140.0050   	-933.6570   	2.66 minutes/million states
+4360000	-1063.6863  	-111.3589   	-952.3273   	2.66 minutes/million states
+4400000	-1081.9452  	-114.7291   	-967.2161   	2.66 minutes/million states
+4440000	-1135.4793  	-125.5046   	-1009.9747  	2.66 minutes/million states
+4480000	-1111.4088  	-134.9684   	-976.4404   	2.66 minutes/million states
+4520000	-1090.8686  	-152.4875   	-938.3812   	2.66 minutes/million states
+4560000	-1105.7010  	-129.4456   	-976.2554   	2.66 minutes/million states
+4600000	-1107.4145  	-162.2901   	-945.1244   	2.66 minutes/million states
+4640000	-1077.9985  	-157.5454   	-920.4531   	2.66 minutes/million states
+4680000	-1068.9879  	-107.3925   	-961.5954   	2.66 minutes/million states
+4720000	-1084.9900  	-129.6524   	-955.3376   	2.66 minutes/million states
+4760000	-1063.8968  	-126.7879   	-937.1090   	2.66 minutes/million states
+4800000	-1115.3478  	-150.1062   	-965.2416   	2.65 minutes/million states
+4840000	-1107.5635  	-132.8841   	-974.6794   	2.65 minutes/million states
+4880000	-1063.4634  	-131.5382   	-931.9252   	2.65 minutes/million states
+4920000	-1076.8593  	-129.5231   	-947.3362   	2.65 minutes/million states
+4960000	-1076.6989  	-96.4370    	-980.2619   	2.65 minutes/million states
+5000000	-1137.2641  	-115.0374   	-1022.2266  	2.66 minutes/million states
+5040000	-1069.1164  	-146.6132   	-922.5032   	2.65 minutes/million states
+5080000	-1068.1190  	-136.6454   	-931.4736   	2.66 minutes/million states
+5120000	-1114.5605  	-159.2687   	-955.2918   	2.66 minutes/million states
+5160000	-1110.9918  	-161.5245   	-949.4673   	2.66 minutes/million states
+5200000	-1079.9972  	-114.3465   	-965.6507   	2.66 minutes/million states
+5240000	-1078.8283  	-114.5221   	-964.3063   	2.66 minutes/million states
+5280000	-1069.0166  	-145.3086   	-923.7080   	2.66 minutes/million states
+5320000	-1098.6115  	-147.8493   	-950.7622   	2.66 minutes/million states
+5360000	-1053.3793  	-120.3771   	-933.0022   	2.66 minutes/million states
+5400000	-1062.3951  	-144.2809   	-918.1142   	2.66 minutes/million states
+5440000	-1100.5883  	-147.8926   	-952.6958   	2.66 minutes/million states
+5480000	-1101.4605  	-156.1868   	-945.2737   	2.66 minutes/million states
+5520000	-1071.2324  	-132.6856   	-938.5467   	2.66 minutes/million states
+5560000	-1072.0707  	-141.7895   	-930.2811   	2.66 minutes/million states
+5600000	-1073.0869  	-135.2905   	-937.7964   	2.66 minutes/million states
+5640000	-1065.8501  	-121.2756   	-944.5745   	2.66 minutes/million states
+5680000	-1078.0178  	-132.2992   	-945.7185   	2.66 minutes/million states
+5720000	-1061.9592  	-95.5496    	-966.4096   	2.66 minutes/million states
+5760000	-1102.8697  	-143.2234   	-959.6463   	2.66 minutes/million states
+5800000	-1097.7594  	-148.8854   	-948.8740   	2.66 minutes/million states
+5840000	-1101.6673  	-97.8316    	-1003.8357  	2.66 minutes/million states
+5880000	-1093.1982  	-126.6162   	-966.5820   	2.66 minutes/million states
+5920000	-1089.2516  	-135.4764   	-953.7753   	2.66 minutes/million states
+5960000	-1052.6740  	-115.4042   	-937.2698   	2.66 minutes/million states
+6000000	-1072.3334  	-130.4385   	-941.8949   	2.66 minutes/million states
+6040000	-1103.0958  	-137.4918   	-965.6040   	2.66 minutes/million states
+6080000	-1077.2893  	-121.2150   	-956.0743   	2.66 minutes/million states
+6120000	-1047.2763  	-134.9696   	-912.3067   	2.66 minutes/million states
+6160000	-1075.8820  	-130.7355   	-945.1465   	2.66 minutes/million states
+6200000	-1105.4211  	-122.5381   	-982.8830   	2.66 minutes/million states
+6240000	-1046.5220  	-135.4790   	-911.0430   	2.66 minutes/million states
+6280000	-1085.8571  	-131.5108   	-954.3464   	2.66 minutes/million states
+6320000	-1057.8209  	-141.8273   	-915.9936   	2.66 minutes/million states
+6360000	-1102.5482  	-178.1018   	-924.4465   	2.66 minutes/million states
+6400000	-1065.3996  	-143.9373   	-921.4623   	2.66 minutes/million states
+6440000	-1073.7994  	-138.1563   	-935.6432   	2.66 minutes/million states
+6480000	-1111.9313  	-151.6624   	-960.2689   	2.66 minutes/million states
+6520000	-1059.7126  	-106.8557   	-952.8569   	2.66 minutes/million states
+6560000	-1068.5636  	-132.9162   	-935.6474   	2.66 minutes/million states
+6600000	-1110.5348  	-137.3699   	-973.1649   	2.66 minutes/million states
+6640000	-1062.0989  	-133.7002   	-928.3987   	2.66 minutes/million states
+6680000	-1079.4217  	-137.8374   	-941.5843   	2.66 minutes/million states
+6720000	-1065.2223  	-137.8001   	-927.4222   	2.66 minutes/million states
+6760000	-1072.2381  	-132.0672   	-940.1708   	2.66 minutes/million states
+6800000	-1070.0983  	-147.0813   	-923.0171   	2.66 minutes/million states
+6840000	-1112.9178  	-141.3457   	-971.5721   	2.66 minutes/million states
+6880000	-1108.7652  	-144.8990   	-963.8662   	2.66 minutes/million states
+6920000	-1076.1787  	-128.7095   	-947.4692   	2.66 minutes/million states
+6960000	-1052.2988  	-136.6767   	-915.6221   	2.66 minutes/million states
+7000000	-1082.1301  	-135.3848   	-946.7453   	2.66 minutes/million states
+7040000	-1087.7368  	-128.7355   	-959.0013   	2.66 minutes/million states
+7080000	-1077.8250  	-123.5160   	-954.3090   	2.66 minutes/million states
+7120000	-1069.1618  	-142.6588   	-926.5030   	2.66 minutes/million states
+7160000	-1086.7963  	-148.6393   	-938.1570   	2.66 minutes/million states
+7200000	-1108.0452  	-148.2450   	-959.8001   	2.66 minutes/million states
+7240000	-1094.2141  	-131.7720   	-962.4420   	2.66 minutes/million states
+7280000	-1109.0739  	-134.3007   	-974.7732   	2.66 minutes/million states
+7320000	-1119.6593  	-128.4841   	-991.1752   	2.66 minutes/million states
+7360000	-1064.1111  	-129.5481   	-934.5630   	2.66 minutes/million states
+7400000	-1051.1862  	-132.0202   	-919.1661   	2.66 minutes/million states
+7440000	-1125.6262  	-147.0439   	-978.5822   	2.66 minutes/million states
+7480000	-1078.3701  	-113.2061   	-965.1640   	2.66 minutes/million states
+7520000	-1083.7886  	-123.3207   	-960.4679   	2.66 minutes/million states
+7560000	-1116.4562  	-134.9801   	-981.4761   	2.66 minutes/million states
+7600000	-1076.2883  	-145.3798   	-930.9084   	2.66 minutes/million states
+7640000	-1039.0820  	-143.7820   	-895.3000   	2.66 minutes/million states
+7680000	-1061.1816  	-128.8618   	-932.3197   	2.66 minutes/million states
+7720000	-1087.9066  	-128.4643   	-959.4423   	2.66 minutes/million states
+7760000	-1062.2171  	-126.5714   	-935.6457   	2.66 minutes/million states
+7800000	-1064.8375  	-139.7253   	-925.1122   	2.66 minutes/million states
+7840000	-1068.7475  	-131.4064   	-937.3410   	2.66 minutes/million states
+7880000	-1077.2079  	-130.9892   	-946.2187   	2.66 minutes/million states
+7920000	-1094.0376  	-149.5570   	-944.4807   	2.66 minutes/million states
+7960000	-1051.6700  	-125.5829   	-926.0871   	2.66 minutes/million states
+8000000	-1079.9696  	-151.6734   	-928.2961   	2.66 minutes/million states
+8040000	-1102.1756  	-133.1298   	-969.0458   	2.66 minutes/million states
+8080000	-1070.2954  	-128.0528   	-942.2426   	2.66 minutes/million states
+8120000	-1107.2276  	-148.5417   	-958.6859   	2.66 minutes/million states
+8160000	-1068.1661  	-120.8035   	-947.3626   	2.66 minutes/million states
+8200000	-1099.9099  	-153.7611   	-946.1488   	2.66 minutes/million states
+8240000	-1017.5305  	-102.6994   	-914.8311   	2.66 minutes/million states
+8280000	-1068.8601  	-127.4244   	-941.4356   	2.66 minutes/million states
+8320000	-1079.9371  	-149.3320   	-930.6051   	2.66 minutes/million states
+8360000	-1107.3970  	-169.8794   	-937.5176   	2.66 minutes/million states
+8400000	-1083.7139  	-129.3532   	-954.3607   	2.66 minutes/million states
+8440000	-1100.4809  	-122.6610   	-977.8199   	2.66 minutes/million states
+8480000	-1065.4918  	-147.1698   	-918.3221   	2.66 minutes/million states
+8520000	-1089.7476  	-134.0948   	-955.6528   	2.66 minutes/million states
+8560000	-1046.9395  	-147.9258   	-899.0137   	2.66 minutes/million states
+8600000	-1055.0534  	-140.9253   	-914.1281   	2.66 minutes/million states
+8640000	-1081.1398  	-136.4826   	-944.6572   	2.66 minutes/million states
+8680000	-1053.2564  	-117.9676   	-935.2888   	2.66 minutes/million states
+8720000	-1069.5043  	-126.0750   	-943.4293   	2.66 minutes/million states
+8760000	-1090.1633  	-135.2315   	-954.9317   	2.66 minutes/million states
+8800000	-1111.8956  	-98.2855    	-1013.6101  	2.66 minutes/million states
+8840000	-1111.1303  	-130.6952   	-980.4351   	2.66 minutes/million states
+8880000	-1100.5972  	-164.4839   	-936.1133   	2.66 minutes/million states
+8920000	-1077.2076  	-118.1137   	-959.0938   	2.66 minutes/million states
+8960000	-1084.0210  	-136.0142   	-948.0068   	2.66 minutes/million states
+9000000	-1069.4781  	-128.4562   	-941.0219   	2.66 minutes/million states
+9040000	-1100.4228  	-131.9846   	-968.4382   	2.66 minutes/million states
+9080000	-1074.6653  	-120.0523   	-954.6131   	2.66 minutes/million states
+9120000	-1094.8937  	-150.7214   	-944.1723   	2.66 minutes/million states
+9160000	-1077.6832  	-143.1040   	-934.5792   	2.66 minutes/million states
+9200000	-1055.0873  	-109.5605   	-945.5268   	2.66 minutes/million states
+9240000	-1106.7475  	-122.9273   	-983.8202   	2.66 minutes/million states
+9280000	-1050.0057  	-128.3164   	-921.6892   	2.66 minutes/million states
+9320000	-1101.5682  	-117.3030   	-984.2652   	2.66 minutes/million states
+9360000	-1078.4842  	-99.6412    	-978.8430   	2.66 minutes/million states
+9400000	-1111.0484  	-159.0119   	-952.0365   	2.66 minutes/million states
+9440000	-1082.2340  	-147.7890   	-934.4450   	2.66 minutes/million states
+9480000	-1082.1086  	-149.7968   	-932.3118   	2.66 minutes/million states
+9520000	-1082.8219  	-155.7183   	-927.1036   	2.66 minutes/million states
+9560000	-1102.5711  	-139.0309   	-963.5402   	2.66 minutes/million states
+9600000	-1104.4700  	-122.7510   	-981.7191   	2.66 minutes/million states
+9640000	-1085.6250  	-123.3277   	-962.2973   	2.66 minutes/million states
+9680000	-1064.9769  	-150.4070   	-914.5700   	2.66 minutes/million states
+9720000	-1093.4860  	-106.6474   	-986.8387   	2.66 minutes/million states
+9760000	-1075.5726  	-131.7909   	-943.7817   	2.66 minutes/million states
+9800000	-1096.2086  	-124.5725   	-971.6360   	2.66 minutes/million states
+9840000	-1077.5953  	-105.3379   	-972.2575   	2.66 minutes/million states
+9880000	-1098.0149  	-148.0114   	-950.0035   	2.66 minutes/million states
+9920000	-1125.1110  	-148.0492   	-977.0617   	2.66 minutes/million states
+9960000	-1074.6072  	-110.2593   	-964.3479   	2.66 minutes/million states
+10000000	-1076.2722  	-129.6622   	-946.6100   	2.66 minutes/million states
+10040000	-1074.0291  	-143.5270   	-930.5021   	2.66 minutes/million states
+10080000	-1085.4076  	-122.2625   	-963.1451   	2.66 minutes/million states
+10120000	-1078.0101  	-137.4872   	-940.5229   	2.66 minutes/million states
+10160000	-1101.0830  	-112.1491   	-988.9339   	2.66 minutes/million states
+10200000	-1066.4184  	-122.4117   	-944.0067   	2.66 minutes/million states
+10240000	-1047.4389  	-124.4517   	-922.9872   	2.66 minutes/million states
+10280000	-1064.2476  	-150.3176   	-913.9300   	2.66 minutes/million states
+10320000	-1089.4441  	-138.5654   	-950.8787   	2.66 minutes/million states
+10360000	-1067.3914  	-128.8163   	-938.5751   	2.66 minutes/million states
+10400000	-1102.6159  	-134.6072   	-968.0087   	2.66 minutes/million states
+10440000	-1064.8463  	-158.1359   	-906.7104   	2.66 minutes/million states
+10480000	-1079.0204  	-148.7256   	-930.2948   	2.66 minutes/million states
+10520000	-1062.2814  	-103.4728   	-958.8086   	2.66 minutes/million states
+10560000	-1077.3329  	-146.7597   	-930.5732   	2.65 minutes/million states
+10600000	-1079.8244  	-167.3682   	-912.4563   	2.66 minutes/million states
+10640000	-1067.3860  	-134.9661   	-932.4199   	2.66 minutes/million states
+10680000	-1067.3471  	-127.5755   	-939.7716   	2.66 minutes/million states
+10720000	-1050.9992  	-126.1901   	-924.8091   	2.66 minutes/million states
+10760000	-1085.5122  	-131.8012   	-953.7109   	2.66 minutes/million states
+10800000	-1128.6452  	-133.3342   	-995.3110   	2.66 minutes/million states
+10840000	-1090.5463  	-128.0843   	-962.4620   	2.66 minutes/million states
+10880000	-1067.2524  	-111.8502   	-955.4022   	2.66 minutes/million states
+10920000	-1097.5026  	-128.1531   	-969.3495   	2.66 minutes/million states
+10960000	-1089.7546  	-142.7900   	-946.9646   	2.66 minutes/million states
+11000000	-1084.8697  	-157.6095   	-927.2602   	2.66 minutes/million states
+11040000	-1092.7375  	-151.9791   	-940.7583   	2.66 minutes/million states
+11080000	-1088.7640  	-149.2515   	-939.5125   	2.66 minutes/million states
+11120000	-1086.6855  	-161.4107   	-925.2748   	2.66 minutes/million states
+11160000	-1078.0810  	-109.4052   	-968.6758   	2.66 minutes/million states
+11200000	-1083.5481  	-140.1197   	-943.4283   	2.66 minutes/million states
+11240000	-1077.8662  	-158.3428   	-919.5233   	2.66 minutes/million states
+11280000	-1089.5997  	-142.9541   	-946.6457   	2.66 minutes/million states
+11320000	-1056.7543  	-142.9769   	-913.7775   	2.66 minutes/million states
+11360000	-1086.1778  	-141.6086   	-944.5692   	2.66 minutes/million states
+11400000	-1088.8079  	-132.3845   	-956.4234   	2.66 minutes/million states
+11440000	-1046.5081  	-133.6608   	-912.8473   	2.66 minutes/million states
+11480000	-1104.1929  	-152.2642   	-951.9287   	2.66 minutes/million states
+11520000	-1135.6376  	-120.7407   	-1014.8969  	2.66 minutes/million states
+11560000	-1092.7553  	-136.0248   	-956.7305   	2.66 minutes/million states
+11600000	-1071.8551  	-130.8026   	-941.0525   	2.66 minutes/million states
+11640000	-1076.2825  	-117.2176   	-959.0649   	2.66 minutes/million states
+11680000	-1085.1253  	-138.3443   	-946.7810   	2.66 minutes/million states
+11720000	-1093.5649  	-149.3028   	-944.2620   	2.66 minutes/million states
+11760000	-1090.8138  	-150.9816   	-939.8322   	2.66 minutes/million states
+11800000	-1060.5713  	-102.0237   	-958.5477   	2.66 minutes/million states
+11840000	-1089.3274  	-149.0295   	-940.2979   	2.66 minutes/million states
+11880000	-1086.0893  	-134.8773   	-951.2119   	2.66 minutes/million states
+11920000	-1090.5999  	-125.6133   	-964.9866   	2.66 minutes/million states
+11960000	-1067.2025  	-152.1573   	-915.0452   	2.66 minutes/million states
+12000000	-1071.8461  	-120.6201   	-951.2260   	2.66 minutes/million states
+12040000	-1079.6602  	-142.0741   	-937.5861   	2.66 minutes/million states
+12080000	-1096.3858  	-104.2672   	-992.1186   	2.66 minutes/million states
+12120000	-1046.7864  	-153.7220   	-893.0644   	2.66 minutes/million states
+12160000	-1068.1387  	-129.8249   	-938.3138   	2.66 minutes/million states
+12200000	-1078.8105  	-148.4000   	-930.4106   	2.66 minutes/million states
+12240000	-1076.2548  	-155.6753   	-920.5795   	2.66 minutes/million states
+12280000	-1079.6117  	-141.2742   	-938.3375   	2.66 minutes/million states
+12320000	-1072.8791  	-134.9752   	-937.9039   	2.66 minutes/million states
+12360000	-1074.0587  	-142.9576   	-931.1010   	2.66 minutes/million states
+12400000	-1086.2371  	-121.7668   	-964.4703   	2.66 minutes/million states
+12440000	-1100.0254  	-141.6284   	-958.3970   	2.66 minutes/million states
+12480000	-1080.7885  	-140.9182   	-939.8703   	2.66 minutes/million states
+12520000	-1097.2041  	-140.1843   	-957.0199   	2.66 minutes/million states
+12560000	-1102.8902  	-140.4830   	-962.4072   	2.66 minutes/million states
+12600000	-1092.0465  	-140.5913   	-951.4552   	2.66 minutes/million states
+12640000	-1056.6591  	-122.0299   	-934.6291   	2.66 minutes/million states
+12680000	-1077.4479  	-121.3956   	-956.0523   	2.66 minutes/million states
+12720000	-1103.1215  	-128.8500   	-974.2715   	2.66 minutes/million states
+12760000	-1068.6838  	-135.5141   	-933.1698   	2.66 minutes/million states
+12800000	-1082.9285  	-107.4582   	-975.4702   	2.66 minutes/million states
+12840000	-1093.0808  	-144.0124   	-949.0684   	2.66 minutes/million states
+12880000	-1067.3328  	-124.3903   	-942.9426   	2.66 minutes/million states
+12920000	-1095.0682  	-132.0157   	-963.0525   	2.66 minutes/million states
+12960000	-1081.3773  	-130.3620   	-951.0153   	2.66 minutes/million states
+13000000	-1077.2792  	-98.8837    	-978.3955   	2.66 minutes/million states
+13040000	-1064.6307  	-125.9671   	-938.6636   	2.66 minutes/million states
+13080000	-1093.2013  	-127.5925   	-965.6088   	2.66 minutes/million states
+13120000	-1053.1743  	-93.8449    	-959.3294   	2.66 minutes/million states
+13160000	-1079.5782  	-120.5456   	-959.0326   	2.66 minutes/million states
+13200000	-1077.2703  	-115.0666   	-962.2037   	2.66 minutes/million states
+13240000	-1098.9031  	-112.8144   	-986.0887   	2.66 minutes/million states
+13280000	-1084.7433  	-159.6183   	-925.1250   	2.66 minutes/million states
+13320000	-1082.3110  	-139.6142   	-942.6968   	2.66 minutes/million states
+13360000	-1080.0714  	-145.7435   	-934.3280   	2.66 minutes/million states
+13400000	-1067.1911  	-107.6634   	-959.5277   	2.66 minutes/million states
+13440000	-1075.4303  	-130.4632   	-944.9671   	2.66 minutes/million states
+13480000	-1075.4394  	-125.2031   	-950.2362   	2.66 minutes/million states
+13520000	-1105.5592  	-149.9431   	-955.6161   	2.66 minutes/million states
+13560000	-1102.9958  	-143.1956   	-959.8002   	2.66 minutes/million states
+13600000	-1063.4096  	-132.1667   	-931.2430   	2.66 minutes/million states
+13640000	-1083.6537  	-129.4086   	-954.2451   	2.66 minutes/million states
+13680000	-1075.4716  	-121.6124   	-953.8592   	2.66 minutes/million states
+13720000	-1076.4167  	-131.4648   	-944.9518   	2.66 minutes/million states
+13760000	-1115.9997  	-136.4004   	-979.5993   	2.66 minutes/million states
+13800000	-1083.0494  	-142.5845   	-940.4649   	2.66 minutes/million states
+13840000	-1061.8108  	-112.0274   	-949.7834   	2.66 minutes/million states
+13880000	-1078.4946  	-162.2201   	-916.2745   	2.66 minutes/million states
+13920000	-1078.7111  	-157.0143   	-921.6967   	2.66 minutes/million states
+13960000	-1048.5431  	-101.5900   	-946.9531   	2.66 minutes/million states
+14000000	-1054.0615  	-123.7306   	-930.3309   	2.66 minutes/million states
+14040000	-1106.5591  	-157.0380   	-949.5212   	2.66 minutes/million states
+14080000	-1068.1412  	-140.6127   	-927.5285   	2.66 minutes/million states
+14120000	-1063.9591  	-107.2707   	-956.6884   	2.66 minutes/million states
+14160000	-1070.3357  	-142.7258   	-927.6099   	2.66 minutes/million states
+14200000	-1071.4282  	-105.9672   	-965.4610   	2.66 minutes/million states
+14240000	-1111.5063  	-114.1466   	-997.3597   	2.66 minutes/million states
+14280000	-1075.4138  	-137.8538   	-937.5600   	2.66 minutes/million states
+14320000	-1082.7812  	-129.8939   	-952.8873   	2.66 minutes/million states
+14360000	-1076.5827  	-127.1246   	-949.4581   	2.66 minutes/million states
+14400000	-1068.8998  	-111.8392   	-957.0606   	2.66 minutes/million states
+14440000	-1083.7165  	-134.5707   	-949.1458   	2.66 minutes/million states
+14480000	-1096.0121  	-111.3450   	-984.6671   	2.66 minutes/million states
+14520000	-1051.3157  	-113.9205   	-937.3952   	2.66 minutes/million states
+14560000	-1079.7523  	-119.8918   	-959.8605   	2.66 minutes/million states
+14600000	-1072.8862  	-142.5646   	-930.3216   	2.66 minutes/million states
+14640000	-1099.8349  	-137.1053   	-962.7296   	2.66 minutes/million states
+14680000	-1116.6758  	-159.2530   	-957.4228   	2.66 minutes/million states
+14720000	-1094.3535  	-142.1798   	-952.1737   	2.66 minutes/million states
+14760000	-1051.3094  	-118.9162   	-932.3933   	2.66 minutes/million states
+14800000	-1092.0135  	-134.3746   	-957.6389   	2.66 minutes/million states
+14840000	-1092.1627  	-138.0181   	-954.1445   	2.66 minutes/million states
+14880000	-1103.8363  	-136.1683   	-967.6679   	2.66 minutes/million states
+14920000	-1092.8231  	-124.8093   	-968.0137   	2.66 minutes/million states
+14960000	-1094.0464  	-141.6625   	-952.3839   	2.66 minutes/million states
+15000000	-1093.3204  	-137.2998   	-956.0206   	2.66 minutes/million states
+15040000	-1070.7325  	-153.0009   	-917.7317   	2.66 minutes/million states
+15080000	-1078.0583  	-125.4973   	-952.5610   	2.66 minutes/million states
+15120000	-1064.9829  	-123.7426   	-941.2403   	2.66 minutes/million states
+15160000	-1068.2338  	-126.6725   	-941.5614   	2.66 minutes/million states
+15200000	-1098.0872  	-130.8704   	-967.2168   	2.66 minutes/million states
+15240000	-1039.0973  	-147.1685   	-891.9288   	2.66 minutes/million states
+15280000	-1093.2199  	-119.0932   	-974.1267   	2.66 minutes/million states
+15320000	-1048.9745  	-111.1062   	-937.8683   	2.66 minutes/million states
+15360000	-1066.5038  	-128.9218   	-937.5820   	2.66 minutes/million states
+15400000	-1089.9720  	-114.7817   	-975.1903   	2.66 minutes/million states
+15440000	-1094.9515  	-161.1346   	-933.8170   	2.66 minutes/million states
+15480000	-1078.0084  	-124.4083   	-953.6001   	2.66 minutes/million states
+15520000	-1083.9718  	-138.8484   	-945.1234   	2.66 minutes/million states
+15560000	-1074.4247  	-135.7618   	-938.6629   	2.66 minutes/million states
+15600000	-1088.0060  	-154.6721   	-933.3340   	2.66 minutes/million states
+15640000	-1085.2842  	-137.7965   	-947.4876   	2.66 minutes/million states
+15680000	-1077.3444  	-122.5036   	-954.8408   	2.66 minutes/million states
+15720000	-1064.0949  	-117.4318   	-946.6630   	2.66 minutes/million states
+15760000	-1106.9496  	-139.4134   	-967.5362   	2.66 minutes/million states
+15800000	-1090.9007  	-145.1368   	-945.7639   	2.66 minutes/million states
+15840000	-1089.8591  	-132.0693   	-957.7898   	2.66 minutes/million states
+15880000	-1059.9820  	-106.3436   	-953.6385   	2.66 minutes/million states
+15920000	-1025.8429  	-111.6336   	-914.2093   	2.66 minutes/million states
+15960000	-1076.7269  	-148.8255   	-927.9014   	2.66 minutes/million states
+16000000	-1094.9761  	-141.7985   	-953.1776   	2.66 minutes/million states
+16040000	-1056.6074  	-139.2660   	-917.3413   	2.66 minutes/million states
+16080000	-1095.8966  	-125.0140   	-970.8826   	2.66 minutes/million states
+16120000	-1078.5151  	-136.1374   	-942.3777   	2.66 minutes/million states
+16160000	-1071.6701  	-127.6866   	-943.9835   	2.66 minutes/million states
+16200000	-1080.3673  	-91.5059    	-988.8614   	2.66 minutes/million states
+16240000	-1067.7207  	-135.4936   	-932.2271   	2.66 minutes/million states
+16280000	-1092.6223  	-129.1931   	-963.4292   	2.66 minutes/million states
+16320000	-1090.5300  	-138.0134   	-952.5166   	2.66 minutes/million states
+16360000	-1084.6918  	-164.9166   	-919.7752   	2.66 minutes/million states
+16400000	-1089.0162  	-138.7917   	-950.2245   	2.66 minutes/million states
+16440000	-1090.3096  	-136.0351   	-954.2745   	2.66 minutes/million states
+16480000	-1088.8153  	-157.3172   	-931.4981   	2.66 minutes/million states
+16520000	-1079.8827  	-124.1857   	-955.6970   	2.66 minutes/million states
+16560000	-1093.3926  	-124.9367   	-968.4559   	2.66 minutes/million states
+16600000	-1088.3827  	-118.5700   	-969.8126   	2.66 minutes/million states
+16640000	-1065.0223  	-110.1568   	-954.8655   	2.66 minutes/million states
+16680000	-1106.5088  	-151.9951   	-954.5138   	2.66 minutes/million states
+16720000	-1065.1870  	-111.4820   	-953.7050   	2.66 minutes/million states
+16760000	-1118.8410  	-126.8850   	-991.9561   	2.66 minutes/million states
+16800000	-1090.2378  	-138.4642   	-951.7735   	2.66 minutes/million states
+16840000	-1071.3819  	-119.1645   	-952.2174   	2.66 minutes/million states
+16880000	-1052.8710  	-121.0176   	-931.8534   	2.66 minutes/million states
+16920000	-1097.4519  	-131.2396   	-966.2123   	2.66 minutes/million states
+16960000	-1099.1256  	-177.9802   	-921.1454   	2.66 minutes/million states
+17000000	-1051.7098  	-126.2442   	-925.4656   	2.66 minutes/million states
+17040000	-1086.4093  	-132.0701   	-954.3392   	2.66 minutes/million states
+17080000	-1098.1757  	-113.1451   	-985.0307   	2.66 minutes/million states
+17120000	-1067.3222  	-122.9331   	-944.3892   	2.66 minutes/million states
+17160000	-1074.3549  	-160.8287   	-913.5263   	2.66 minutes/million states
+17200000	-1059.4787  	-133.9879   	-925.4908   	2.66 minutes/million states
+17240000	-1081.3758  	-129.0765   	-952.2994   	2.66 minutes/million states
+17280000	-1103.5875  	-119.0447   	-984.5428   	2.66 minutes/million states
+17320000	-1088.2132  	-136.7399   	-951.4733   	2.66 minutes/million states
+17360000	-1121.1683  	-145.1961   	-975.9722   	2.66 minutes/million states
+17400000	-1097.8543  	-170.8877   	-926.9666   	2.66 minutes/million states
+17440000	-1086.0925  	-144.1888   	-941.9038   	2.66 minutes/million states
+17480000	-1089.8699  	-138.8091   	-951.0608   	2.66 minutes/million states
+17520000	-1080.7541  	-142.0206   	-938.7335   	2.66 minutes/million states
+17560000	-1087.1118  	-121.9537   	-965.1581   	2.66 minutes/million states
+17600000	-1060.2936  	-145.5796   	-914.7140   	2.66 minutes/million states
+17640000	-1040.7932  	-137.7807   	-903.0125   	2.66 minutes/million states
+17680000	-1047.6140  	-105.6317   	-941.9823   	2.66 minutes/million states
+17720000	-1082.4302  	-142.2784   	-940.1519   	2.66 minutes/million states
+17760000	-1076.9436  	-137.1512   	-939.7924   	2.66 minutes/million states
+17800000	-1075.6480  	-117.4114   	-958.2367   	2.66 minutes/million states
+17840000	-1081.7525  	-135.1539   	-946.5986   	2.66 minutes/million states
+17880000	-1068.4164  	-146.1846   	-922.2318   	2.66 minutes/million states
+17920000	-1075.7715  	-119.4264   	-956.3452   	2.66 minutes/million states
+17960000	-1069.1171  	-126.9423   	-942.1749   	2.66 minutes/million states
+18000000	-1083.5751  	-153.2064   	-930.3687   	2.66 minutes/million states
+18040000	-1087.8304  	-152.9370   	-934.8934   	2.66 minutes/million states
+18080000	-1062.9615  	-132.2759   	-930.6856   	2.66 minutes/million states
+18120000	-1097.0259  	-149.9222   	-947.1037   	2.66 minutes/million states
+18160000	-1075.1253  	-138.6319   	-936.4934   	2.66 minutes/million states
+18200000	-1095.7428  	-128.8156   	-966.9272   	2.66 minutes/million states
+18240000	-1082.7167  	-135.7522   	-946.9645   	2.66 minutes/million states
+18280000	-1104.9810  	-145.2606   	-959.7204   	2.66 minutes/million states
+18320000	-1036.8847  	-115.0494   	-921.8352   	2.66 minutes/million states
+18360000	-1069.1596  	-148.3942   	-920.7654   	2.66 minutes/million states
+18400000	-1110.0794  	-136.1205   	-973.9589   	2.66 minutes/million states
+18440000	-1089.1464  	-146.4690   	-942.6775   	2.66 minutes/million states
+18480000	-1096.4675  	-157.7151   	-938.7524   	2.66 minutes/million states
+18520000	-1087.3940  	-120.8664   	-966.5276   	2.66 minutes/million states
+18560000	-1095.1293  	-141.4890   	-953.6403   	2.66 minutes/million states
+18600000	-1087.0762  	-154.2854   	-932.7908   	2.66 minutes/million states
+18640000	-1091.9221  	-153.6119   	-938.3102   	2.66 minutes/million states
+18680000	-1121.1235  	-137.7646   	-983.3589   	2.66 minutes/million states
+18720000	-1100.7166  	-128.3532   	-972.3634   	2.66 minutes/million states
+18760000	-1060.3467  	-123.1578   	-937.1890   	2.66 minutes/million states
+18800000	-1068.9389  	-162.5124   	-906.4265   	2.66 minutes/million states
+18840000	-1098.7036  	-150.8798   	-947.8238   	2.66 minutes/million states
+18880000	-1056.5118  	-115.1260   	-941.3858   	2.66 minutes/million states
+18920000	-1072.9687  	-148.3143   	-924.6544   	2.66 minutes/million states
+18960000	-1087.3597  	-120.5629   	-966.7968   	2.66 minutes/million states
+19000000	-1078.2103  	-151.8570   	-926.3533   	2.66 minutes/million states
+19040000	-1083.2007  	-159.2347   	-923.9660   	2.66 minutes/million states
+19080000	-1067.1714  	-151.9850   	-915.1864   	2.66 minutes/million states
+19120000	-1073.0918  	-127.0514   	-946.0404   	2.66 minutes/million states
+19160000	-1089.7923  	-128.3176   	-961.4747   	2.66 minutes/million states
+19200000	-1097.7650  	-138.2612   	-959.5037   	2.66 minutes/million states
+19240000	-1068.0710  	-131.8283   	-936.2427   	2.66 minutes/million states
+19280000	-1065.8462  	-122.7712   	-943.0750   	2.66 minutes/million states
+19320000	-1085.9244  	-131.3691   	-954.5553   	2.66 minutes/million states
+19360000	-1086.8654  	-155.9713   	-930.8941   	2.66 minutes/million states
+19400000	-1099.4593  	-156.1547   	-943.3046   	2.66 minutes/million states
+19440000	-1108.5484  	-142.5970   	-965.9513   	2.66 minutes/million states
+19480000	-1066.3825  	-151.4206   	-914.9619   	2.66 minutes/million states
+19520000	-1081.9923  	-143.3190   	-938.6733   	2.66 minutes/million states
+19560000	-1108.2797  	-127.8626   	-980.4171   	2.66 minutes/million states
+19600000	-1110.8592  	-133.5979   	-977.2613   	2.66 minutes/million states
+19640000	-1063.2503  	-139.2995   	-923.9507   	2.66 minutes/million states
+19680000	-1110.1715  	-124.1159   	-986.0556   	2.66 minutes/million states
+19720000	-1078.2837  	-124.2744   	-954.0094   	2.66 minutes/million states
+19760000	-1087.0995  	-116.0244   	-971.0751   	2.66 minutes/million states
+19800000	-1076.7417  	-127.1456   	-949.5961   	2.66 minutes/million states
+19840000	-1079.2195  	-104.4877   	-974.7319   	2.66 minutes/million states
+19880000	-1071.9836  	-115.6218   	-956.3618   	2.66 minutes/million states
+19920000	-1061.9465  	-140.2147   	-921.7318   	2.66 minutes/million states
+19960000	-1083.4772  	-116.2820   	-967.1952   	2.66 minutes/million states
+20000000	-1100.5527  	-136.5580   	-963.9947   	2.66 minutes/million states
+20040000	-1074.9268  	-115.1787   	-959.7481   	2.66 minutes/million states
+20080000	-1065.6015  	-125.5276   	-940.0739   	2.66 minutes/million states
+20120000	-1081.9552  	-135.8386   	-946.1166   	2.66 minutes/million states
+20160000	-1087.4912  	-114.1718   	-973.3194   	2.66 minutes/million states
+20200000	-1081.0995  	-126.9916   	-954.1080   	2.66 minutes/million states
+20240000	-1064.6398  	-134.2631   	-930.3767   	2.66 minutes/million states
+20280000	-1083.0941  	-150.4390   	-932.6551   	2.66 minutes/million states
+20320000	-1079.9786  	-130.7650   	-949.2136   	2.66 minutes/million states
+20360000	-1110.9209  	-120.6331   	-990.2878   	2.66 minutes/million states
+20400000	-1105.2657  	-155.2975   	-949.9682   	2.66 minutes/million states
+20440000	-1093.3244  	-146.7555   	-946.5689   	2.66 minutes/million states
+20480000	-1072.3398  	-146.8699   	-925.4699   	2.66 minutes/million states
+20520000	-1106.7422  	-149.8081   	-956.9341   	2.66 minutes/million states
+20560000	-1073.7925  	-139.1015   	-934.6910   	2.66 minutes/million states
+20600000	-1070.6858  	-131.2400   	-939.4458   	2.66 minutes/million states
+20640000	-1090.9767  	-170.4438   	-920.5328   	2.66 minutes/million states
+20680000	-1075.4632  	-125.1027   	-950.3604   	2.66 minutes/million states
+20720000	-1104.8024  	-141.9212   	-962.8812   	2.66 minutes/million states
+20760000	-1077.0636  	-141.6063   	-935.4573   	2.66 minutes/million states
+20800000	-1107.8553  	-147.8028   	-960.0525   	2.66 minutes/million states
+20840000	-1100.6523  	-106.6342   	-994.0181   	2.66 minutes/million states
+20880000	-1095.2976  	-126.6041   	-968.6936   	2.66 minutes/million states
+20920000	-1088.0226  	-163.5838   	-924.4388   	2.66 minutes/million states
+20960000	-1095.7461  	-150.5370   	-945.2092   	2.66 minutes/million states
+21000000	-1109.5068  	-143.7593   	-965.7475   	2.66 minutes/million states
+21040000	-1071.7209  	-136.8293   	-934.8916   	2.66 minutes/million states
+21080000	-1103.2477  	-146.4341   	-956.8136   	2.66 minutes/million states
+21120000	-1113.3116  	-139.0756   	-974.2361   	2.66 minutes/million states
+21160000	-1089.4790  	-132.2196   	-957.2594   	2.66 minutes/million states
+21200000	-1087.8087  	-144.9529   	-942.8558   	2.66 minutes/million states
+21240000	-1082.5980  	-133.7884   	-948.8095   	2.66 minutes/million states
+21280000	-1108.2845  	-156.6827   	-951.6018   	2.66 minutes/million states
+21320000	-1095.1461  	-158.2082   	-936.9379   	2.66 minutes/million states
+21360000	-1087.2800  	-149.5150   	-937.7650   	2.66 minutes/million states
+21400000	-1119.3089  	-143.2659   	-976.0430   	2.66 minutes/million states
+21440000	-1071.0449  	-139.2864   	-931.7585   	2.66 minutes/million states
+21480000	-1075.9000  	-137.9428   	-937.9572   	2.66 minutes/million states
+21520000	-1109.0174  	-149.7733   	-959.2442   	2.66 minutes/million states
+21560000	-1085.3124  	-137.6653   	-947.6471   	2.66 minutes/million states
+21600000	-1105.1793  	-140.1066   	-965.0726   	2.66 minutes/million states
+21640000	-1080.2704  	-139.2598   	-941.0107   	2.66 minutes/million states
+21680000	-1102.4583  	-156.1413   	-946.3170   	2.66 minutes/million states
+21720000	-1076.9549  	-153.8556   	-923.0993   	2.66 minutes/million states
+21760000	-1082.9448  	-126.0468   	-956.8981   	2.66 minutes/million states
+21800000	-1076.2195  	-150.3023   	-925.9171   	2.66 minutes/million states
+21840000	-1067.1672  	-160.0484   	-907.1188   	2.66 minutes/million states
+21880000	-1045.8725  	-139.6186   	-906.2539   	2.66 minutes/million states
+21920000	-1064.6009  	-141.8477   	-922.7532   	2.66 minutes/million states
+21960000	-1076.4440  	-117.0491   	-959.3949   	2.66 minutes/million states
+22000000	-1109.2324  	-133.1585   	-976.0739   	2.66 minutes/million states
+22040000	-1081.0010  	-123.7458   	-957.2552   	2.66 minutes/million states
+22080000	-1107.4805  	-134.9776   	-972.5029   	2.66 minutes/million states
+22120000	-1075.0548  	-119.0326   	-956.0222   	2.66 minutes/million states
+22160000	-1100.9577  	-147.7248   	-953.2329   	2.66 minutes/million states
+22200000	-1075.1457  	-133.0031   	-942.1426   	2.66 minutes/million states
+22240000	-1080.7457  	-131.4355   	-949.3101   	2.66 minutes/million states
+22280000	-1086.8493  	-125.2427   	-961.6066   	2.66 minutes/million states
+22320000	-1089.6278  	-131.2402   	-958.3876   	2.66 minutes/million states
+22360000	-1034.3949  	-105.6400   	-928.7549   	2.66 minutes/million states
+22400000	-1093.1544  	-136.8160   	-956.3384   	2.66 minutes/million states
+22440000	-1091.1613  	-130.9056   	-960.2557   	2.66 minutes/million states
+22480000	-1093.4412  	-143.9440   	-949.4972   	2.66 minutes/million states
+22520000	-1080.7092  	-125.7725   	-954.9367   	2.66 minutes/million states
+22560000	-1094.7211  	-139.0093   	-955.7118   	2.66 minutes/million states
+22600000	-1075.0066  	-114.4569   	-960.5497   	2.66 minutes/million states
+22640000	-1072.2101  	-121.9187   	-950.2914   	2.66 minutes/million states
+22680000	-1098.9288  	-131.5549   	-967.3739   	2.66 minutes/million states
+22720000	-1067.4162  	-113.7633   	-953.6529   	2.66 minutes/million states
+22760000	-1085.1807  	-108.0133   	-977.1674   	2.66 minutes/million states
+22800000	-1088.4886  	-136.4754   	-952.0132   	2.66 minutes/million states
+22840000	-1085.2748  	-140.5465   	-944.7283   	2.66 minutes/million states
+22880000	-1070.9973  	-133.2540   	-937.7433   	2.66 minutes/million states
+22920000	-1078.9075  	-117.4361   	-961.4714   	2.66 minutes/million states
+22960000	-1089.5693  	-135.2238   	-954.3455   	2.66 minutes/million states
+23000000	-1081.3040  	-135.7451   	-945.5589   	2.66 minutes/million states
+23040000	-1057.8257  	-122.7386   	-935.0871   	2.66 minutes/million states
+23080000	-1070.9560  	-151.9507   	-919.0053   	2.66 minutes/million states
+23120000	-1083.5021  	-121.3998   	-962.1022   	2.66 minutes/million states
+23160000	-1051.0125  	-122.7232   	-928.2893   	2.66 minutes/million states
+23200000	-1065.9279  	-138.5923   	-927.3356   	2.66 minutes/million states
+23240000	-1086.1944  	-152.3194   	-933.8750   	2.66 minutes/million states
+23280000	-1073.7380  	-113.6272   	-960.1109   	2.66 minutes/million states
+23320000	-1070.1871  	-126.7977   	-943.3894   	2.66 minutes/million states
+23360000	-1103.0216  	-130.0885   	-972.9331   	2.66 minutes/million states
+23400000	-1098.7617  	-147.6462   	-951.1155   	2.66 minutes/million states
+23440000	-1074.6520  	-142.3711   	-932.2809   	2.66 minutes/million states
+23480000	-1083.5047  	-125.8870   	-957.6177   	2.66 minutes/million states
+23520000	-1100.2206  	-127.2495   	-972.9711   	2.66 minutes/million states
+23560000	-1076.9346  	-131.0661   	-945.8685   	2.66 minutes/million states
+23600000	-1093.5892  	-167.4893   	-926.0999   	2.66 minutes/million states
+23640000	-1061.1114  	-124.5902   	-936.5212   	2.66 minutes/million states
+23680000	-1067.4318  	-136.5195   	-930.9123   	2.66 minutes/million states
+23720000	-1062.7111  	-108.4553   	-954.2558   	2.66 minutes/million states
+23760000	-1105.0434  	-144.9647   	-960.0786   	2.66 minutes/million states
+23800000	-1048.5291  	-131.0527   	-917.4764   	2.66 minutes/million states
+23840000	-1084.5017  	-105.6708   	-978.8309   	2.66 minutes/million states
+23880000	-1072.1639  	-153.5660   	-918.5979   	2.66 minutes/million states
+23920000	-1066.1574  	-127.8921   	-938.2653   	2.66 minutes/million states
+23960000	-1041.4464  	-127.2232   	-914.2232   	2.66 minutes/million states
+24000000	-1067.3482  	-126.9062   	-940.4420   	2.66 minutes/million states
+24040000	-1067.0592  	-131.3530   	-935.7062   	2.66 minutes/million states
+24080000	-1110.2032  	-121.4418   	-988.7614   	2.66 minutes/million states
+24120000	-1098.6307  	-138.1209   	-960.5097   	2.66 minutes/million states
+24160000	-1057.0292  	-132.3773   	-924.6518   	2.66 minutes/million states
+24200000	-1076.5679  	-142.1010   	-934.4669   	2.66 minutes/million states
+24240000	-1084.8401  	-139.3343   	-945.5058   	2.66 minutes/million states
+24280000	-1111.3338  	-148.6372   	-962.6965   	2.66 minutes/million states
+24320000	-1064.1169  	-142.4738   	-921.6432   	2.66 minutes/million states
+24360000	-1081.3476  	-116.5125   	-964.8350   	2.66 minutes/million states
+24400000	-1086.2071  	-116.0634   	-970.1437   	2.66 minutes/million states
+24440000	-1080.6303  	-132.7687   	-947.8615   	2.66 minutes/million states
+24480000	-1060.3391  	-120.4871   	-939.8521   	2.66 minutes/million states
+24520000	-1093.4837  	-138.9036   	-954.5800   	2.66 minutes/million states
+24560000	-1063.7962  	-137.7047   	-926.0915   	2.66 minutes/million states
+24600000	-1059.8210  	-119.6195   	-940.2015   	2.66 minutes/million states
+24640000	-1095.8069  	-156.1711   	-939.6358   	2.66 minutes/million states
+24680000	-1106.1724  	-125.5952   	-980.5772   	2.66 minutes/million states
+24720000	-1066.2491  	-143.7799   	-922.4691   	2.66 minutes/million states
+24760000	-1091.2753  	-142.0499   	-949.2254   	2.66 minutes/million states
+24800000	-1091.3382  	-119.9729   	-971.3653   	2.66 minutes/million states
+24840000	-1071.2700  	-125.1656   	-946.1044   	2.66 minutes/million states
+24880000	-1084.2557  	-148.5714   	-935.6843   	2.66 minutes/million states
+24920000	-1091.5978  	-163.9752   	-927.6226   	2.66 minutes/million states
+24960000	-1091.7613  	-144.6738   	-947.0875   	2.66 minutes/million states
+25000000	-1095.8208  	-131.1729   	-964.6479   	2.66 minutes/million states
+25040000	-1048.9540  	-128.9797   	-919.9742   	2.66 minutes/million states
+25080000	-1083.2861  	-114.5472   	-968.7389   	2.66 minutes/million states
+25120000	-1074.6781  	-132.1741   	-942.5040   	2.66 minutes/million states
+25160000	-1113.9687  	-144.3896   	-969.5791   	2.66 minutes/million states
+25200000	-1081.7050  	-124.8792   	-956.8258   	2.66 minutes/million states
+25240000	-1092.9927  	-155.2422   	-937.7506   	2.66 minutes/million states
+25280000	-1134.7778  	-130.1653   	-1004.6124  	2.66 minutes/million states
+25320000	-1081.9960  	-117.4833   	-964.5126   	2.66 minutes/million states
+25360000	-1107.1478  	-136.2316   	-970.9162   	2.66 minutes/million states
+25400000	-1088.7199  	-112.7649   	-975.9550   	2.66 minutes/million states
+25440000	-1100.4968  	-135.7655   	-964.7313   	2.66 minutes/million states
+25480000	-1075.3759  	-147.2990   	-928.0769   	2.66 minutes/million states
+25520000	-1079.4516  	-117.0972   	-962.3544   	2.66 minutes/million states
+25560000	-1087.6712  	-147.5207   	-940.1505   	2.66 minutes/million states
+25600000	-1099.5917  	-153.5989   	-945.9928   	2.66 minutes/million states
+25640000	-1066.9341  	-113.7777   	-953.1564   	2.66 minutes/million states
+25680000	-1066.4902  	-122.6757   	-943.8144   	2.66 minutes/million states
+25720000	-1105.5127  	-144.7608   	-960.7520   	2.66 minutes/million states
+25760000	-1055.3867  	-141.1421   	-914.2445   	2.67 minutes/million states
+25800000	-1088.8907  	-134.8050   	-954.0857   	2.67 minutes/million states
+25840000	-1080.0484  	-114.9643   	-965.0840   	2.67 minutes/million states
+25880000	-1071.2063  	-129.7586   	-941.4477   	2.67 minutes/million states
+25920000	-1052.1229  	-143.0241   	-909.0988   	2.67 minutes/million states
+25960000	-1037.9250  	-123.4789   	-914.4461   	2.67 minutes/million states
+26000000	-1109.9364  	-144.3992   	-965.5372   	2.67 minutes/million states
+26040000	-1087.1191  	-115.2042   	-971.9149   	2.67 minutes/million states
+26080000	-1079.5170  	-138.7778   	-940.7393   	2.67 minutes/million states
+26120000	-1076.5853  	-118.6769   	-957.9083   	2.67 minutes/million states
+26160000	-1083.9218  	-125.7618   	-958.1600   	2.67 minutes/million states
+26200000	-1068.4203  	-137.2050   	-931.2153   	2.67 minutes/million states
+26240000	-1068.8235  	-133.7939   	-935.0296   	2.67 minutes/million states
+26280000	-1086.9186  	-135.3161   	-951.6026   	2.67 minutes/million states
+26320000	-1101.5220  	-141.1193   	-960.4027   	2.67 minutes/million states
+26360000	-1049.9384  	-129.9393   	-919.9991   	2.67 minutes/million states
+26400000	-1047.6815  	-113.4325   	-934.2491   	2.67 minutes/million states
+26440000	-1074.2884  	-122.2502   	-952.0382   	2.67 minutes/million states
+26480000	-1079.1850  	-142.8552   	-936.3298   	2.67 minutes/million states
+26520000	-1092.5584  	-131.7717   	-960.7866   	2.67 minutes/million states
+26560000	-1062.3697  	-114.4148   	-947.9549   	2.67 minutes/million states
+26600000	-1094.4068  	-125.1638   	-969.2430   	2.67 minutes/million states
+26640000	-1080.3073  	-118.7501   	-961.5572   	2.67 minutes/million states
+26680000	-1099.5971  	-137.1877   	-962.4094   	2.67 minutes/million states
+26720000	-1102.8875  	-122.5644   	-980.3231   	2.67 minutes/million states
+26760000	-1060.7918  	-128.3492   	-932.4426   	2.67 minutes/million states
+26800000	-1065.4380  	-126.7700   	-938.6680   	2.67 minutes/million states
+26840000	-1066.0031  	-132.5499   	-933.4532   	2.67 minutes/million states
+26880000	-1101.0766  	-148.0699   	-953.0067   	2.67 minutes/million states
+26920000	-1078.6561  	-126.9730   	-951.6832   	2.67 minutes/million states
+26960000	-1083.1486  	-148.7105   	-934.4381   	2.67 minutes/million states
+27000000	-1076.7290  	-106.6056   	-970.1234   	2.67 minutes/million states
+27040000	-1064.7647  	-141.1994   	-923.5654   	2.67 minutes/million states
+27080000	-1029.3884  	-128.8791   	-900.5092   	2.67 minutes/million states
+27120000	-1079.0540  	-137.7768   	-941.2773   	2.67 minutes/million states
+27160000	-1074.9807  	-118.4576   	-956.5230   	2.67 minutes/million states
+27200000	-1068.0493  	-135.2147   	-932.8346   	2.67 minutes/million states
+27240000	-1060.0470  	-126.4122   	-933.6348   	2.67 minutes/million states
+27280000	-1074.7709  	-121.6265   	-953.1444   	2.67 minutes/million states
+27320000	-1071.4971  	-128.6915   	-942.8057   	2.67 minutes/million states
+27360000	-1083.7684  	-145.3587   	-938.4098   	2.67 minutes/million states
+27400000	-1092.9821  	-160.5528   	-932.4293   	2.67 minutes/million states
+27440000	-1100.2632  	-135.9377   	-964.3254   	2.67 minutes/million states
+27480000	-1061.6164  	-146.4619   	-915.1545   	2.67 minutes/million states
+27520000	-1103.8613  	-149.7541   	-954.1072   	2.67 minutes/million states
+27560000	-1108.1986  	-138.0365   	-970.1621   	2.67 minutes/million states
+27600000	-1097.1865  	-167.7583   	-929.4282   	2.67 minutes/million states
+27640000	-1081.9133  	-111.6016   	-970.3117   	2.67 minutes/million states
+27680000	-1097.4803  	-110.8090   	-986.6713   	2.67 minutes/million states
+27720000	-1101.2925  	-123.7687   	-977.5238   	2.67 minutes/million states
+27760000	-1089.7368  	-136.0660   	-953.6708   	2.67 minutes/million states
+27800000	-1069.4669  	-130.4682   	-938.9987   	2.67 minutes/million states
+27840000	-1085.1254  	-149.3803   	-935.7451   	2.67 minutes/million states
+27880000	-1108.4345  	-96.5828    	-1011.8517  	2.67 minutes/million states
+27920000	-1089.4052  	-152.0806   	-937.3247   	2.67 minutes/million states
+27960000	-1079.5158  	-144.4538   	-935.0620   	2.67 minutes/million states
+28000000	-1092.6244  	-146.3850   	-946.2395   	2.67 minutes/million states
+28040000	-1085.2974  	-130.9079   	-954.3894   	2.67 minutes/million states
+28080000	-1067.6728  	-144.0572   	-923.6156   	2.67 minutes/million states
+28120000	-1113.5192  	-146.1366   	-967.3826   	2.67 minutes/million states
+28160000	-1070.8007  	-138.6405   	-932.1602   	2.67 minutes/million states
+28200000	-1099.7496  	-163.8908   	-935.8588   	2.67 minutes/million states
+28240000	-1096.6631  	-141.8351   	-954.8280   	2.67 minutes/million states
+28280000	-1086.4046  	-134.3079   	-952.0967   	2.67 minutes/million states
+28320000	-1075.8905  	-147.1099   	-928.7806   	2.67 minutes/million states
+28360000	-1101.2747  	-132.0742   	-969.2005   	2.67 minutes/million states
+28400000	-1101.0948  	-161.4352   	-939.6596   	2.67 minutes/million states
+28440000	-1063.0489  	-124.4095   	-938.6394   	2.67 minutes/million states
+28480000	-1090.1432  	-134.6053   	-955.5379   	2.67 minutes/million states
+28520000	-1122.1570  	-169.2805   	-952.8765   	2.67 minutes/million states
+28560000	-1125.8984  	-119.2856   	-1006.6129  	2.67 minutes/million states
+28600000	-1103.0103  	-126.7450   	-976.2653   	2.67 minutes/million states
+28640000	-1068.1073  	-146.3979   	-921.7094   	2.67 minutes/million states
+28680000	-1070.0422  	-149.4534   	-920.5889   	2.67 minutes/million states
+28720000	-1093.8884  	-132.4750   	-961.4134   	2.67 minutes/million states
+28760000	-1083.4833  	-155.2479   	-928.2354   	2.67 minutes/million states
+28800000	-1074.8591  	-157.4832   	-917.3759   	2.67 minutes/million states
+28840000	-1068.4941  	-140.3838   	-928.1104   	2.67 minutes/million states
+28880000	-1093.0784  	-157.9531   	-935.1253   	2.67 minutes/million states
+28920000	-1077.1684  	-133.8261   	-943.3423   	2.67 minutes/million states
+28960000	-1106.5924  	-113.3331   	-993.2593   	2.67 minutes/million states
+29000000	-1071.3472  	-129.8707   	-941.4765   	2.67 minutes/million states
+29040000	-1058.6122  	-131.1676   	-927.4446   	2.67 minutes/million states
+29080000	-1080.6001  	-149.8892   	-930.7109   	2.67 minutes/million states
+29120000	-1082.7136  	-127.3626   	-955.3509   	2.67 minutes/million states
+29160000	-1092.4790  	-119.6892   	-972.7898   	2.67 minutes/million states
+29200000	-1103.4674  	-105.7056   	-997.7618   	2.67 minutes/million states
+29240000	-1073.3855  	-120.6780   	-952.7075   	2.67 minutes/million states
+29280000	-1083.3716  	-140.2127   	-943.1589   	2.67 minutes/million states
+29320000	-1127.5093  	-125.6914   	-1001.8179  	2.67 minutes/million states
+29360000	-1089.9190  	-113.4773   	-976.4417   	2.67 minutes/million states
+29400000	-1099.0772  	-132.8035   	-966.2738   	2.67 minutes/million states
+29440000	-1066.6335  	-127.3091   	-939.3244   	2.67 minutes/million states
+29480000	-1102.6929  	-153.3442   	-949.3487   	2.67 minutes/million states
+29520000	-1082.3835  	-143.0697   	-939.3138   	2.67 minutes/million states
+29560000	-1080.3228  	-147.1688   	-933.1540   	2.67 minutes/million states
+29600000	-1061.6187  	-124.3480   	-937.2707   	2.67 minutes/million states
+29640000	-1088.9580  	-138.5081   	-950.4499   	2.67 minutes/million states
+29680000	-1066.2015  	-124.9276   	-941.2739   	2.67 minutes/million states
+29720000	-1076.8039  	-123.8953   	-952.9086   	2.67 minutes/million states
+29760000	-1089.8573  	-148.0852   	-941.7721   	2.67 minutes/million states
+29800000	-1108.5093  	-152.6063   	-955.9031   	2.67 minutes/million states
+29840000	-1079.3482  	-130.0963   	-949.2519   	2.67 minutes/million states
+29880000	-1070.2654  	-107.0666   	-963.1989   	2.67 minutes/million states
+29920000	-1059.4733  	-107.1156   	-952.3577   	2.67 minutes/million states
+29960000	-1085.0393  	-148.1102   	-936.9291   	2.67 minutes/million states
+30000000	-1079.3496  	-120.7210   	-958.6286   	2.67 minutes/million states
+30040000	-1085.1389  	-134.2445   	-950.8944   	2.67 minutes/million states
+30080000	-1091.3100  	-130.4242   	-960.8858   	2.67 minutes/million states
+30120000	-1092.6876  	-143.1346   	-949.5530   	2.67 minutes/million states
+30160000	-1108.7770  	-145.1311   	-963.6459   	2.67 minutes/million states
+30200000	-1073.5799  	-142.7409   	-930.8390   	2.67 minutes/million states
+30240000	-1086.1585  	-132.9956   	-953.1630   	2.67 minutes/million states
+30280000	-1104.4348  	-147.9013   	-956.5334   	2.67 minutes/million states
+30320000	-1077.2720  	-135.8147   	-941.4572   	2.67 minutes/million states
+30360000	-1091.2476  	-138.7659   	-952.4817   	2.67 minutes/million states
+30400000	-1074.6586  	-129.4462   	-945.2124   	2.67 minutes/million states
+30440000	-1078.8963  	-144.0641   	-934.8323   	2.67 minutes/million states
+30480000	-1081.2103  	-113.8796   	-967.3307   	2.67 minutes/million states
+30520000	-1070.8331  	-151.7919   	-919.0412   	2.67 minutes/million states
+30560000	-1096.6790  	-153.7646   	-942.9144   	2.67 minutes/million states
+30600000	-1067.0624  	-128.3662   	-938.6962   	2.67 minutes/million states
+30640000	-1058.6466  	-121.2773   	-937.3693   	2.67 minutes/million states
+30680000	-1105.2243  	-126.1444   	-979.0799   	2.67 minutes/million states
+30720000	-1072.4283  	-136.3145   	-936.1138   	2.67 minutes/million states
+30760000	-1068.5843  	-113.8982   	-954.6861   	2.67 minutes/million states
+30800000	-1078.0709  	-127.0725   	-950.9984   	2.67 minutes/million states
+30840000	-1089.8804  	-120.6854   	-969.1950   	2.67 minutes/million states
+30880000	-1099.7225  	-128.2324   	-971.4902   	2.67 minutes/million states
+30920000	-1080.1348  	-108.1973   	-971.9375   	2.67 minutes/million states
+30960000	-1064.9344  	-98.8611    	-966.0733   	2.67 minutes/million states
+31000000	-1120.9278  	-137.7935   	-983.1343   	2.67 minutes/million states
+31040000	-1105.3674  	-140.8494   	-964.5180   	2.67 minutes/million states
+31080000	-1143.3926  	-133.5627   	-1009.8299  	2.67 minutes/million states
+31120000	-1087.7573  	-127.0410   	-960.7163   	2.67 minutes/million states
+31160000	-1088.2792  	-126.0283   	-962.2509   	2.67 minutes/million states
+31200000	-1120.8664  	-127.6141   	-993.2522   	2.67 minutes/million states
+31240000	-1064.0812  	-127.9775   	-936.1037   	2.67 minutes/million states
+31280000	-1079.1636  	-145.9894   	-933.1742   	2.67 minutes/million states
+31320000	-1067.4150  	-126.3467   	-941.0683   	2.67 minutes/million states
+31360000	-1093.9203  	-146.6819   	-947.2384   	2.67 minutes/million states
+31400000	-1059.2065  	-134.9621   	-924.2444   	2.67 minutes/million states
+31440000	-1081.4182  	-127.8872   	-953.5310   	2.67 minutes/million states
+31480000	-1063.1371  	-143.3671   	-919.7699   	2.67 minutes/million states
+31520000	-1072.4730  	-128.5316   	-943.9414   	2.67 minutes/million states
+31560000	-1097.4891  	-148.0708   	-949.4182   	2.67 minutes/million states
+31600000	-1056.3938  	-144.8520   	-911.5418   	2.67 minutes/million states
+31640000	-1090.3141  	-124.3932   	-965.9208   	2.67 minutes/million states
+31680000	-1088.0980  	-156.2040   	-931.8939   	2.67 minutes/million states
+31720000	-1088.8460  	-128.5615   	-960.2846   	2.67 minutes/million states
+31760000	-1090.4016  	-136.9290   	-953.4726   	2.67 minutes/million states
+31800000	-1129.8205  	-151.8033   	-978.0173   	2.67 minutes/million states
+31840000	-1071.2362  	-126.4469   	-944.7893   	2.67 minutes/million states
+31880000	-1090.1862  	-127.1628   	-963.0234   	2.67 minutes/million states
+31920000	-1109.4704  	-157.5138   	-951.9565   	2.67 minutes/million states
+31960000	-1094.4448  	-144.3294   	-950.1155   	2.67 minutes/million states
+32000000	-1076.6360  	-123.0700   	-953.5660   	2.67 minutes/million states
+32040000	-1077.4151  	-126.6910   	-950.7240   	2.67 minutes/million states
+32080000	-1101.9817  	-118.4963   	-983.4854   	2.67 minutes/million states
+32120000	-1067.3412  	-124.4079   	-942.9333   	2.67 minutes/million states
+32160000	-1090.2040  	-113.4320   	-976.7720   	2.67 minutes/million states
+32200000	-1048.0944  	-122.9715   	-925.1229   	2.67 minutes/million states
+32240000	-1060.5531  	-137.1463   	-923.4068   	2.67 minutes/million states
+32280000	-1035.5557  	-129.0819   	-906.4738   	2.67 minutes/million states
+32320000	-1104.3125  	-121.4740   	-982.8385   	2.67 minutes/million states
+32360000	-1084.5316  	-159.8759   	-924.6556   	2.67 minutes/million states
+32400000	-1035.5182  	-132.3180   	-903.2002   	2.67 minutes/million states
+32440000	-1095.6823  	-147.7280   	-947.9543   	2.67 minutes/million states
+32480000	-1089.7698  	-141.0195   	-948.7502   	2.67 minutes/million states
+32520000	-1117.7972  	-146.5269   	-971.2703   	2.67 minutes/million states
+32560000	-1107.5372  	-159.4119   	-948.1252   	2.67 minutes/million states
+32600000	-1087.0449  	-158.5310   	-928.5139   	2.67 minutes/million states
+32640000	-1104.6458  	-138.4241   	-966.2218   	2.67 minutes/million states
+32680000	-1093.1390  	-173.4176   	-919.7214   	2.67 minutes/million states
+32720000	-1073.1909  	-156.7351   	-916.4558   	2.67 minutes/million states
+32760000	-1100.7301  	-148.2326   	-952.4975   	2.67 minutes/million states
+32800000	-1075.0447  	-132.6985   	-942.3462   	2.67 minutes/million states
+32840000	-1069.4144  	-122.9036   	-946.5109   	2.67 minutes/million states
+32880000	-1101.1562  	-116.7205   	-984.4357   	2.67 minutes/million states
+32920000	-1072.8626  	-144.1364   	-928.7262   	2.67 minutes/million states
+32960000	-1066.4178  	-140.1917   	-926.2261   	2.67 minutes/million states
+33000000	-1074.7473  	-140.6421   	-934.1051   	2.67 minutes/million states
+33040000	-1088.5697  	-116.6407   	-971.9290   	2.67 minutes/million states
+33080000	-1091.3315  	-124.7137   	-966.6178   	2.67 minutes/million states
+33120000	-1108.2395  	-140.4198   	-967.8197   	2.67 minutes/million states
+33160000	-1074.4386  	-146.2101   	-928.2285   	2.67 minutes/million states
+33200000	-1089.8320  	-141.2038   	-948.6282   	2.67 minutes/million states
+33240000	-1072.9037  	-137.8046   	-935.0992   	2.67 minutes/million states
+33280000	-1111.6248  	-139.5383   	-972.0864   	2.67 minutes/million states
+33320000	-1063.1913  	-125.2304   	-937.9609   	2.67 minutes/million states
+33360000	-1047.4332  	-139.2166   	-908.2166   	2.67 minutes/million states
+33400000	-1045.6719  	-122.2488   	-923.4232   	2.67 minutes/million states
+33440000	-1096.4021  	-107.5288   	-988.8733   	2.67 minutes/million states
+33480000	-1049.7566  	-119.1249   	-930.6316   	2.67 minutes/million states
+33520000	-1111.2204  	-145.1866   	-966.0338   	2.67 minutes/million states
+33560000	-1057.7187  	-142.2759   	-915.4427   	2.67 minutes/million states
+33600000	-1088.2148  	-123.8196   	-964.3952   	2.67 minutes/million states
+33640000	-1067.9304  	-136.3896   	-931.5408   	2.67 minutes/million states
+33680000	-1085.6555  	-107.2035   	-978.4520   	2.67 minutes/million states
+33720000	-1075.2247  	-125.7481   	-949.4766   	2.67 minutes/million states
+33760000	-1056.5712  	-118.5043   	-938.0669   	2.67 minutes/million states
+33800000	-1080.8939  	-136.5266   	-944.3673   	2.67 minutes/million states
+33840000	-1091.9132  	-121.4501   	-970.4631   	2.67 minutes/million states
+33880000	-1070.1029  	-163.7877   	-906.3151   	2.67 minutes/million states
+33920000	-1083.4095  	-133.5368   	-949.8727   	2.67 minutes/million states
+33960000	-1077.7703  	-134.3864   	-943.3839   	2.67 minutes/million states
+34000000	-1078.0505  	-150.7985   	-927.2521   	2.67 minutes/million states
+34040000	-1091.8369  	-126.8549   	-964.9819   	2.67 minutes/million states
+34080000	-1059.5822  	-150.7471   	-908.8351   	2.67 minutes/million states
+34120000	-1084.7240  	-135.0975   	-949.6266   	2.67 minutes/million states
+34160000	-1095.5481  	-136.0150   	-959.5330   	2.67 minutes/million states
+34200000	-1040.4955  	-147.9698   	-892.5257   	2.67 minutes/million states
+34240000	-1066.4829  	-124.4958   	-941.9870   	2.67 minutes/million states
+34280000	-1076.6698  	-137.2288   	-939.4410   	2.67 minutes/million states
+34320000	-1098.9916  	-110.2088   	-988.7827   	2.67 minutes/million states
+34360000	-1073.5270  	-136.1140   	-937.4131   	2.67 minutes/million states
+34400000	-1102.4804  	-131.5257   	-970.9547   	2.67 minutes/million states
+34440000	-1106.2910  	-111.2869   	-995.0040   	2.67 minutes/million states
+34480000	-1083.2731  	-158.0666   	-925.2065   	2.67 minutes/million states
+34520000	-1057.9463  	-122.4508   	-935.4956   	2.67 minutes/million states
+34560000	-1092.0633  	-114.1697   	-977.8935   	2.67 minutes/million states
+34600000	-1079.1594  	-136.5624   	-942.5969   	2.67 minutes/million states
+34640000	-1071.6077  	-126.3508   	-945.2570   	2.67 minutes/million states
+34680000	-1098.0100  	-152.7546   	-945.2554   	2.67 minutes/million states
+34720000	-1119.5895  	-145.0894   	-974.5001   	2.67 minutes/million states
+34760000	-1054.5377  	-126.2023   	-928.3354   	2.67 minutes/million states
+34800000	-1127.9255  	-157.8638   	-970.0617   	2.67 minutes/million states
+34840000	-1097.3132  	-107.7861   	-989.5271   	2.67 minutes/million states
+34880000	-1041.7690  	-122.7151   	-919.0539   	2.67 minutes/million states
+34920000	-1042.2128  	-120.2914   	-921.9214   	2.67 minutes/million states
+34960000	-1105.2222  	-131.1717   	-974.0505   	2.67 minutes/million states
+35000000	-1072.6382  	-129.7829   	-942.8553   	2.67 minutes/million states
+35040000	-1112.3834  	-114.8794   	-997.5040   	2.67 minutes/million states
+35080000	-1071.1779  	-140.6237   	-930.5542   	2.67 minutes/million states
+35120000	-1078.0130  	-120.6339   	-957.3791   	2.67 minutes/million states
+35160000	-1083.6424  	-132.1440   	-951.4984   	2.67 minutes/million states
+35200000	-1089.7147  	-118.4243   	-971.2904   	2.67 minutes/million states
+35240000	-1106.6007  	-141.6840   	-964.9167   	2.67 minutes/million states
+35280000	-1115.4486  	-132.5877   	-982.8609   	2.67 minutes/million states
+35320000	-1080.2455  	-130.5526   	-949.6928   	2.67 minutes/million states
+35360000	-1044.6135  	-104.0677   	-940.5458   	2.67 minutes/million states
+35400000	-1063.6352  	-152.8374   	-910.7978   	2.67 minutes/million states
+35440000	-1101.0043  	-142.6266   	-958.3777   	2.67 minutes/million states
+35480000	-1104.7177  	-150.9484   	-953.7693   	2.67 minutes/million states
+35520000	-1081.4342  	-136.7968   	-944.6374   	2.67 minutes/million states
+35560000	-1102.4937  	-143.6632   	-958.8305   	2.67 minutes/million states
+35600000	-1102.0647  	-115.7466   	-986.3181   	2.67 minutes/million states
+35640000	-1087.5594  	-126.6489   	-960.9104   	2.67 minutes/million states
+35680000	-1077.8175  	-134.1284   	-943.6890   	2.67 minutes/million states
+35720000	-1087.9217  	-113.5965   	-974.3252   	2.67 minutes/million states
+35760000	-1072.2976  	-134.1219   	-938.1757   	2.67 minutes/million states
+35800000	-1083.8149  	-136.8888   	-946.9260   	2.67 minutes/million states
+35840000	-1071.5540  	-129.5527   	-942.0013   	2.67 minutes/million states
+35880000	-1082.5443  	-138.2613   	-944.2830   	2.67 minutes/million states
+35920000	-1081.7428  	-112.7476   	-968.9952   	2.67 minutes/million states
+35960000	-1079.3593  	-145.8353   	-933.5241   	2.67 minutes/million states
+36000000	-1103.4388  	-138.8897   	-964.5492   	2.67 minutes/million states
+36040000	-1090.4938  	-138.0734   	-952.4204   	2.67 minutes/million states
+36080000	-1078.5312  	-123.8710   	-954.6602   	2.67 minutes/million states
+36120000	-1086.2955  	-128.4319   	-957.8636   	2.67 minutes/million states
+36160000	-1078.4803  	-130.7900   	-947.6903   	2.67 minutes/million states
+36200000	-1071.9995  	-142.8920   	-929.1076   	2.67 minutes/million states
+36240000	-1091.8331  	-116.3987   	-975.4344   	2.67 minutes/million states
+36280000	-1062.8320  	-133.1118   	-929.7202   	2.67 minutes/million states
+36320000	-1077.1633  	-148.3515   	-928.8118   	2.67 minutes/million states
+36360000	-1086.1400  	-118.7177   	-967.4223   	2.67 minutes/million states
+36400000	-1064.0297  	-119.4134   	-944.6163   	2.67 minutes/million states
+36440000	-1107.7742  	-131.7558   	-976.0184   	2.67 minutes/million states
+36480000	-1073.1619  	-139.6782   	-933.4837   	2.67 minutes/million states
+36520000	-1101.1272  	-131.4259   	-969.7012   	2.67 minutes/million states
+36560000	-1074.5937  	-109.1540   	-965.4397   	2.67 minutes/million states
+36600000	-1071.8415  	-136.4218   	-935.4197   	2.67 minutes/million states
+36640000	-1074.1003  	-134.5812   	-939.5191   	2.67 minutes/million states
+36680000	-1126.2094  	-153.3098   	-972.8996   	2.67 minutes/million states
+36720000	-1101.8259  	-149.1339   	-952.6920   	2.67 minutes/million states
+36760000	-1068.1115  	-122.4659   	-945.6457   	2.67 minutes/million states
+36800000	-1112.5302  	-126.6918   	-985.8384   	2.67 minutes/million states
+36840000	-1062.8978  	-113.4732   	-949.4246   	2.67 minutes/million states
+36880000	-1098.8962  	-139.5927   	-959.3035   	2.67 minutes/million states
+36920000	-1072.5644  	-124.5277   	-948.0367   	2.67 minutes/million states
+36960000	-1091.8851  	-145.6709   	-946.2142   	2.67 minutes/million states
+37000000	-1075.1469  	-149.0860   	-926.0609   	2.67 minutes/million states
+37040000	-1092.7570  	-118.4196   	-974.3375   	2.67 minutes/million states
+37080000	-1087.7490  	-129.8337   	-957.9153   	2.67 minutes/million states
+37120000	-1094.5731  	-135.1420   	-959.4311   	2.67 minutes/million states
+37160000	-1074.7928  	-121.6790   	-953.1139   	2.67 minutes/million states
+37200000	-1098.2933  	-131.5234   	-966.7700   	2.67 minutes/million states
+37240000	-1088.1515  	-112.0393   	-976.1122   	2.67 minutes/million states
+37280000	-1039.1657  	-102.7458   	-936.4198   	2.67 minutes/million states
+37320000	-1075.0195  	-119.9315   	-955.0880   	2.67 minutes/million states
+37360000	-1072.0004  	-111.7139   	-960.2866   	2.67 minutes/million states
+37400000	-1090.4869  	-142.1917   	-948.2952   	2.67 minutes/million states
+37440000	-1060.8921  	-137.0445   	-923.8477   	2.67 minutes/million states
+37480000	-1077.3628  	-142.4062   	-934.9566   	2.67 minutes/million states
+37520000	-1078.6694  	-122.2421   	-956.4274   	2.67 minutes/million states
+37560000	-1103.2014  	-131.7161   	-971.4853   	2.67 minutes/million states
+37600000	-1092.3945  	-134.7374   	-957.6571   	2.67 minutes/million states
+37640000	-1091.3978  	-111.3692   	-980.0286   	2.67 minutes/million states
+37680000	-1099.6527  	-125.6231   	-974.0296   	2.67 minutes/million states
+37720000	-1082.9411  	-137.8039   	-945.1372   	2.67 minutes/million states
+37760000	-1077.7627  	-149.8529   	-927.9099   	2.67 minutes/million states
+37800000	-1060.7493  	-143.3024   	-917.4468   	2.67 minutes/million states
+37840000	-1065.2328  	-120.6934   	-944.5393   	2.67 minutes/million states
+37880000	-1081.1501  	-133.4523   	-947.6977   	2.67 minutes/million states
+37920000	-1091.2424  	-148.6797   	-942.5626   	2.67 minutes/million states
+37960000	-1071.7503  	-113.9489   	-957.8014   	2.67 minutes/million states
+38000000	-1125.2727  	-136.8961   	-988.3766   	2.67 minutes/million states
+38040000	-1102.2567  	-137.4570   	-964.7997   	2.67 minutes/million states
+38080000	-1084.5905  	-125.1759   	-959.4146   	2.67 minutes/million states
+38120000	-1052.9078  	-115.3219   	-937.5859   	2.67 minutes/million states
+38160000	-1076.9138  	-114.5452   	-962.3687   	2.67 minutes/million states
+38200000	-1062.0507  	-120.8081   	-941.2426   	2.67 minutes/million states
+38240000	-1074.7071  	-130.9614   	-943.7457   	2.67 minutes/million states
+38280000	-1054.0970  	-116.7375   	-937.3595   	2.67 minutes/million states
+38320000	-1053.1673  	-138.8800   	-914.2873   	2.67 minutes/million states
+38360000	-1095.9268  	-139.5683   	-956.3585   	2.67 minutes/million states
+38400000	-1082.2310  	-147.8295   	-934.4015   	2.67 minutes/million states
+38440000	-1055.3404  	-132.1287   	-923.2116   	2.67 minutes/million states
+38480000	-1044.9906  	-124.5637   	-920.4270   	2.67 minutes/million states
+38520000	-1092.1571  	-154.1139   	-938.0432   	2.67 minutes/million states
+38560000	-1068.7410  	-131.5212   	-937.2198   	2.67 minutes/million states
+38600000	-1083.0000  	-131.5528   	-951.4472   	2.67 minutes/million states
+38640000	-1078.2993  	-154.2111   	-924.0882   	2.67 minutes/million states
+38680000	-1052.8544  	-159.8986   	-892.9558   	2.67 minutes/million states
+38720000	-1102.4102  	-140.2912   	-962.1190   	2.67 minutes/million states
+38760000	-1047.4156  	-121.8353   	-925.5803   	2.67 minutes/million states
+38800000	-1082.0197  	-132.1429   	-949.8768   	2.67 minutes/million states
+38840000	-1098.0394  	-112.6914   	-985.3480   	2.67 minutes/million states
+38880000	-1082.5240  	-154.3786   	-928.1454   	2.67 minutes/million states
+38920000	-1059.8363  	-127.0460   	-932.7903   	2.67 minutes/million states
+38960000	-1047.9006  	-125.2699   	-922.6308   	2.67 minutes/million states
+39000000	-1112.8494  	-145.0429   	-967.8065   	2.67 minutes/million states
+39040000	-1068.5451  	-146.7584   	-921.7867   	2.67 minutes/million states
+39080000	-1087.3157  	-138.0834   	-949.2322   	2.67 minutes/million states
+39120000	-1073.2451  	-120.5296   	-952.7154   	2.67 minutes/million states
+39160000	-1084.5964  	-136.1426   	-948.4538   	2.67 minutes/million states
+39200000	-1109.9587  	-142.6482   	-967.3106   	2.67 minutes/million states
+39240000	-1051.2388  	-125.4964   	-925.7424   	2.67 minutes/million states
+39280000	-1068.0352  	-103.7426   	-964.2926   	2.67 minutes/million states
+39320000	-1077.5330  	-137.9214   	-939.6117   	2.67 minutes/million states
+39360000	-1054.9421  	-112.6869   	-942.2552   	2.67 minutes/million states
+39400000	-1125.9599  	-151.9295   	-974.0304   	2.67 minutes/million states
+39440000	-1082.7120  	-105.4464   	-977.2657   	2.67 minutes/million states
+39480000	-1081.0716  	-129.1954   	-951.8762   	2.67 minutes/million states
+39520000	-1053.5697  	-96.6036    	-956.9661   	2.67 minutes/million states
+39560000	-1057.7818  	-111.5011   	-946.2807   	2.67 minutes/million states
+39600000	-1072.8692  	-140.5232   	-932.3460   	2.67 minutes/million states
+39640000	-1083.8175  	-104.5593   	-979.2582   	2.67 minutes/million states
+39680000	-1077.9826  	-112.3024   	-965.6801   	2.67 minutes/million states
+39720000	-1059.5336  	-140.1132   	-919.4204   	2.67 minutes/million states
+39760000	-1099.5194  	-125.4899   	-974.0295   	2.67 minutes/million states
+39800000	-1061.6605  	-137.5155   	-924.1450   	2.67 minutes/million states
+39840000	-1067.4682  	-133.8661   	-933.6022   	2.67 minutes/million states
+39880000	-1052.2627  	-133.5286   	-918.7342   	2.67 minutes/million states
+39920000	-1106.0679  	-123.2711   	-982.7968   	2.67 minutes/million states
+39960000	-1098.9963  	-143.4866   	-955.5098   	2.67 minutes/million states
+40000000	-1074.7924  	-134.5710   	-940.2214   	2.67 minutes/million states
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) Smoothed_Pr(accept)
+scale(regions.rates)                              0.835   20105827   3016693  0.15     0.2341      0.23        
+bitFlip(regions.indicators)                               9379686    1440562  0.15     0.1794      0.14        
+deltaExchange(regions.root.frequencies)           0.593   1340939    63415    0.05     0.2341      0.23        
+scale(regions.clock.rate)                         0.612   4023832    767690   0.19     0.2339      0.25        
+tipStateSwapOperator                                      726138     129211   0.18     1.0         1.0         
+empiricalTreeDistributionOperator                         4023578    910737   0.23     1.0         1.0         
+
+1.779353888888889 hours
+

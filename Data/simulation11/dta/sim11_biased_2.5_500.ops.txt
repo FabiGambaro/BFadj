@@ -1,0 +1,20 @@
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) Smoothed_Pr(accept)
+scale(kappa)                                      0.659   284553     4623978  16.25    0.2344      0.25        
+deltaExchange(frequencies)                        0.021   286505     4660013  16.27    0.2344      0.27        
+scale(default.clock.rate)                         0.836   854091     14025183 16.42    0.2338      0.24        
+up:nodeHeights(treeModel) down:default.clock.rate 1.0     854384     9643969  11.29    0.2342      0.24        
+scale(regions.clock.rate)                         0.413   853057     1134544  1.33     0.2338      0.22        
+up:nodeHeights(treeModel) down:regions.clock.rate 1.0     855180     9651160  11.29    0.2337      0.3         
+subtreeSlide(treeModel)                           0.594   8546577    15512608 1.82     0.2341      0.22        
+Narrow Exchange(treeModel)                                8547877    11473891 1.34     0.2366      0.22        
+Wide Exchange(treeModel)                                  854864     139100   0.16     0.0009      0.0         
+wilsonBalding(treeModel)                                  854783     2543566  2.98     0.0036      0.0         
+scale(treeModel.rootHeight)                       0.132   854932     1548239  1.81     0.2345      0.2         
+uniform(nodeHeights(treeModel))                           8546705    23267218 2.72     0.5889      0.62        
+scale(constant.popSize)                           0.748   853435     108081   0.13     0.234       0.22        
+scale(regions.rates)                              0.733   4273740    4996124  1.17     0.234       0.22        
+bitFlip(regions.indicators)                               1994700    2244804  1.13     0.204       0.16        
+deltaExchange(regions.root.frequencies)           0.632   284617     87927    0.31     0.2337      0.2         
+

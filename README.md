@@ -24,21 +24,25 @@ For run these analysis, 100 evenly sampled post-burnin trees from the correspond
 
 Then:
 
-  tip state swap transition kernel = (tnp*sum of all transition kernel weights)/MCMC length
+   tip state swap transition kernel = (tnp*sum of all transition kernel weights)/MCMC length
 
-  tnp = np*[number of posterior samples]
+   tnp = np*[number of posterior samples]
 
-  np = ln(1-x)/ln((n-2)/n)
+   np = ln(1-x)/ln((n-2)/n)
 
 ## Estimation of the adjusted Bayes Factor (BF<sub>adj</sub>)
 
 Following [Vrancken and colleagues](https://journals.asm.org/doi/10.1128/jvi.00683-20), the BF<sub>adj</sub> support for a transition link between locations i and j was calculated by replacing the default prior expectation based on the minimal rate configuration, which only depends on the number of sampled locations, with an empirical prior expectation p<sub>emp,i→j</sub> that accounts for the relative abundance of sampled locations (i.e., sampling intensity).The p<sub>emp,i→j</sub> is the mean posterior inclusion frequency for the transition link i to j obtained from the tip-state-swap discrete phylogeographic analysis while the p<sub>i→j</sub> is the mean posterior inclusion frequency for the transition link i to j obtained from the standard discrete phylogeographic analysis. The BF<sub>adj,i→j</sub> is then calculated as follows: 
 
+
 BF<sub>adj,i→j</sub> = [p<sub>i→j</sub> /(1-p<sub>i→j</sub>)]/[p<sub>emp,i→j</sub>/(1-p<sub>emp,i→j</sub>)]
+
 
 We also estimated the BF<sub>std</sub> and BF<sub>adj</sub> for the root location. Let p<sub>i</sub> and p<sub>emp,i</sub> be the location probabilities obtained at the root of the tree from the standard and tip-state-swap discrete phylogeographic analysis and q<sub>k</sub> the prior probabilty assigning equal probability to all K locations, q<sub>k</sub> = 1/K. The BF<sub>std</sub> and BF<sub>adj</sub> for the root location are calculated as follows:
 
+
 BF<sub>std,i</sub> = [p<sub>i</sub>/(1-p<sub>i</sub>)]/[q<sub>k</sub>/(1-q<sub>k</sub>)] 
+
     
 BF<sub>adj,i</sub> = [p<sub>i</sub>/(1-p<sub>i</sub>)]/[p<sub>emp,i</sub>/(1-p<sub>emp,i</sub>)]
 

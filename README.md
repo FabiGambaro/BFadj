@@ -24,11 +24,11 @@ For run these analysis, 100 evenly sampled post-burnin trees from the correspond
 
 Then:
 
-      tip state swap transition kernel = (tnp*sum of all transition kernel weights)/MCMC length
+ tip state swap transition kernel = (tnp*sum of all transition kernel weights)/MCMC length
 
-      tnp = np*[number of posterior samples]
+ tnp = np*[number of posterior samples]
 
-      np = ln(1-x)/ln((n-2)/n)
+ np = ln(1-x)/ln((n-2)/n)
 
 ## Estimation of the adjusted Bayes Factor (BF<sub>adj</sub>)
 

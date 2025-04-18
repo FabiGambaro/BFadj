@@ -17,10 +17,10 @@ XML files were generated with generate_tipSwap_xml.r which modifies the template
 
 For run these analysis, 100 evenly sampled post-burnin trees from the corresponding standard discrete phylogeographic analysis were used as an empirical tree distribution. Similarly as the standard discrete phylogeographic analysis, tip-state-swap analysis were run for 20 million or 40 million Markov chain Monte Carlo (MCMC) iterations, with samples collected every 20,000 or 40,000 iterations, for the 150 and 500 sequences dataset respectively. Tip state locations were randomised during the MCMC simulation by including the tip state swap transition kernel, which swpas the location states of two tips at each permutation event, therfore controlling the total expected number of permutation events along the chain. This parameter must be manually adjusted to reflect the number of taxa and the total MCMC length, following the equations below. Let:
 
-    - tnp = total number of expected permutation events over the MCMC chain
-    - np = number of permutation events between two consecutive sampled posterior trees
-    - n = number of taxa
-    - x = proportion of tips swapped between two consecutive sampled posterior trees
+1. tnp = total number of expected permutation events over the MCMC chain
+2. np = number of permutation events between two consecutive sampled posterior trees
+3. n = number of taxa
+4. x = proportion of tips swapped between two consecutive sampled posterior trees
 
 Then:
 

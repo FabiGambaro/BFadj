@@ -47,6 +47,6 @@ BF<sub>std,i</sub> = [p<sub>i</sub>/(1-p<sub>i</sub>)]/[q<sub>k</sub>/(1-q<sub>k
 BF<sub>adj,i</sub> = [p<sub>i</sub>/(1-p<sub>i</sub>)]/[p<sub>emp,i</sub>/(1-p<sub>emp,i</sub>)]
 
 
-
+These calculations can be computed with calculateBF.r, which can be found in the R_script folder
 
 
